@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Welcome from './components/Welcome'
 import About from './components/About'
 import Loading from './components/Loading'
