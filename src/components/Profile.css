@@ -1,0 +1,21 @@
+.app {
+  width: 30%;
+}
+
+.layout {
+  border: 1px solid black;
+  background-color: cyan;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+@media (max-width:480px) {
+  .app {
+    width: 100%;
+  }
+}

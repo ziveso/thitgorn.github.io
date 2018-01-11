@@ -1,0 +1,9 @@
+.about {
+  display: flex;
+}
+
+@media (max-width:480px) {
+  .about {
+    display: block;
+  }
+}

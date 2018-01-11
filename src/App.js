@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import Welcome from './components/Welcome'
-import About from './components/About'
+import Container from './components/Container'
 import Loading from './components/Loading'
 
 import Axios from 'axios'
@@ -36,13 +35,12 @@ class App extends Component {
       // do loading here
       return <Loading/>
     } else
-    return <About data={this.state}/>
+    return <Container data={this.state}/>
   }
 
   render() {
     return (
       <div>
-        <Welcome/>
         <div>{this.getAbout()}</div>
       </div>
     );
