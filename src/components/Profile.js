@@ -12,11 +12,18 @@ class Profile extends React.Component{
     return (<div className='app'>
               <div className='layout'>
                 <img className='img' src={this.state.img} alt={this.state.img}/>
-                <div>
+                <div className='container'>
                   <h1>{this.state.name}</h1>
+                  <h6>Software Developer</h6>
                   <h3>{this.state.username}</h3>
-                  <h3>follower : {this.state.follower}</h3>
-                  <h3>following : {this.state.following}</h3>
+                  <a herf="mailto:thitiwat.tho1@ku.th">(MAIL): thitiwat.tho1@ku.th</a><br/>
+
+                  <a herf="https://github.com/thitgorn">(GITHUB): https://www.github.com/thitgorn</a><br/>
+                  <div>follower : {this.state.follower} following : {this.state.following}</div>
+
+                  <a herf="https://www.facebook.com/thitiwat.thongbor">(FACEBOOK): https://www.github.com/thitgorn</a><br/>
+
+                  <a herf="https://twitter.com/GuyZivesO">(TWITTER): https://www.github.com/thitgorn</a><br/>
                 </div>
               </div>
             </div>)

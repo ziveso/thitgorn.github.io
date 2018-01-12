@@ -14,6 +14,7 @@ class Welcome extends React.Component {
                   </h1>
                     SOFTWARE AND KNOWLEDGE ENGINEERING
                 </div>
+                <div className="arrow bounce"></div>
             </div>)
   }
 }

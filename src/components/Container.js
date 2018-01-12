@@ -2,6 +2,8 @@ import React from 'react'
 import Welcome from '../components/Welcome'
 import Profile from '../components/Profile'
 import About from '../components/About'
+import Award from '../components/Award'
+import Project from '../components/Project'
 import '../components/Container.css'
 
 class Container extends React.Component {
@@ -14,9 +16,13 @@ class Container extends React.Component {
   render() {
     return (<div>
               <Welcome/>
-              <div className="about">
-                <Profile data={this.state}/>
-                <About/>
+              <div className="container">
+                <div className="about">
+                  <Profile data={this.state}/>
+                  <About/>
+                </div>
+                <Award/>
+                <Project/>
               </div>
             </div>)
   }
