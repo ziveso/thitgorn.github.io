@@ -1,15 +1,11 @@
 import React from 'react'
 import './Welcome.css'
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { scroller } from 'react-scroll'
 
 
 var style = {
   display: 'flex' ,
     };
-
-var debug = {
-  border: "1px solid black"
-}
 
 class Welcome extends React.Component {
   scroll() {

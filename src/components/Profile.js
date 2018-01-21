@@ -19,7 +19,8 @@ class Profile extends React.Component{
                 <div className='container'>
                   <h1>{this.state.name}</h1>
                   <h6>Software Developer</h6>
-                  <h3>{this.state.username}</h3>
+                  <h4>{this.state.username}</h4>
+                  <h1>CONTACT</h1>
                   <a href="mailto:thitiwat.tho1@ku.th"><img src={Mail} style={{width:"32px" , height:"32px"}} alt={Mail}/>: thitiwat.tho1@ku.th</a><br/>
 
                   <a href="https://github.com/thitgorn"><img src={Github} style={{width:"32px" , height:"32px"}} alt={Github}/>: thitgorn<br/>

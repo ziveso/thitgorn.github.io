@@ -7,7 +7,7 @@ const description = "test"
 const repo = "https://github.com/thitgorn/TouchYou_Hackaton"
 class Award extends React.Component {
   render() {
-    return (<div>
+    return (<div style={{margin:"50px 0 0 0"}}>
                 <h1>ACHIEVEMENT</h1>
                 <div className="row">
                   <div className="col-md-4">
