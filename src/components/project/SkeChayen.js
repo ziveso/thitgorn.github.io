@@ -1,26 +1,14 @@
 import React from 'react'
-import Toggle from '../Toggle'
+import chayen from '../../images/chayen.png'
+import Card from '../Card'
 
-var popup = []
 
+const title = "SkeChayen"
+const description = "test"
+const repo = ""
 class SkeChayen extends React.Component {
-  constructor() {
-    super()
-    this.state = { click : false}
-    this.toggle = this.toggle.bind(this)
-  }
-
-  toggle() {
-    var prev = !this.state.click
-    this.setState( {click : prev} )
-    console.log(this.state.click);
-  }
-
   render() {
-    return (<div>
-                <h3 onClick={this.toggle}>Ske Chayen</h3>
-                <Toggle toggle={this.toggle} click={this.state.click} element={popup}/>
-            </div>);
+    return <Card img={chayen} title={title} description={description} repo={repo} />
   }
 }
 

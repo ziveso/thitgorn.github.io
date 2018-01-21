@@ -1,5 +1,7 @@
 import React from 'react'
 import '../components/Toggle.css'
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 class Toggle extends React.Component {
   constructor(props) {
@@ -9,10 +11,15 @@ class Toggle extends React.Component {
   }
 
   getImage() {
-    return this.state.element.map( i=> {
-      return (<div>{i}</div>)
-    })
+    console.log(this.state.element);
+     return <ImageGallery items={this.state.element} />
   }
+
+  // getImage() {
+  //   return this.state.element.map( i=> {
+  //     return (<div>{i}</div>)
+  //   })
+  // }
 
   getToggle() {
     if(this.props.click===true) {

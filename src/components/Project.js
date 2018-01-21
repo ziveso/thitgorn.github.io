@@ -9,11 +9,23 @@ class Project extends React.Component {
   render() {
     return (<div>
               <h1>WORK EXPERIENCE</h1>
-              <Barcamp/>
-              <DisasterBox/>
-              <Remec/>
-              <SkeChayen/>
-              <Smarthouse/>
+              <div className="row">
+                <div className="col-sm-3">
+                  <Barcamp/>
+                </div>
+                <div className="col-sm-3">
+                  <DisasterBox/>
+                </div>
+                <div className="col-sm-3">
+                  <Remec/>
+                </div>
+                <div className="col-sm-3">
+                  <SkeChayen/>
+                </div>
+                <div className="col-sm-3">
+                  <Smarthouse/>
+                </div>
+              </div>
             </div>);
   }
 }
