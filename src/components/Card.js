@@ -27,7 +27,7 @@ class Card extends React.Component {
   render() {
     return (<div className="container" style={style}>
                 <div className="card">
-                  <img className="card-img-top img-responsive" src={this.props.img} alt="Card image cap"/>
+                  <img className="card-img-top img-responsive" src={this.props.img} alt={this.props.img}/>
                   <div className="card-block">
                     <h4 className="card-title">{this.props.title}</h4>
                     <p className="card-text">{this.props.description}</p>

@@ -10,19 +10,19 @@ class Project extends React.Component {
     return (<div>
               <h1>WORK EXPERIENCE</h1>
               <div className="row">
-                <div className="col-sm-3">
+                <div className="col-sm-6 col-md-3">
                   <Barcamp/>
                 </div>
-                <div className="col-sm-3">
+                <div className="col-sm-6 col-md-3">
                   <DisasterBox/>
                 </div>
-                <div className="col-sm-3">
+                <div className="col-sm-6 col-md-3">
                   <Remec/>
                 </div>
-                <div className="col-sm-3">
+                <div className="col-sm-6 col-md-3">
                   <SkeChayen/>
                 </div>
-                <div className="col-sm-3">
+                <div className="col-sm-6 col-md-3">
                   <Smarthouse/>
                 </div>
               </div>

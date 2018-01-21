@@ -5,7 +5,7 @@ import Card from '../Card'
 
 const title = "Smarthouse"
 const description = "test"
-const repo = ""
+const repo = "https://github.com/thitgorn/smarthouse"
 class Smarthouse extends React.Component {
   render() {
     return <Card img={smarthouse} title={title} description={description} repo={repo} />

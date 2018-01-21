@@ -10,7 +10,7 @@ class Award extends React.Component {
     return (<div>
                 <h1>ACHIEVEMENT</h1>
                 <div className="row">
-                  <div className="col-sm-4">
+                  <div className="col-md-4">
                     <Card img={localhackday} title={title} description={description} repo={repo} />
                   </div>
                 </div>

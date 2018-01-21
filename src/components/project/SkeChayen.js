@@ -5,10 +5,11 @@ import Card from '../Card'
 
 const title = "SkeChayen"
 const description = "test"
-const repo = ""
+const repo = "https://github.com/thitgorn/ske-chayen"
+const page = null
 class SkeChayen extends React.Component {
   render() {
-    return <Card img={chayen} title={title} description={description} repo={repo} />
+    return <Card img={chayen} title={title} description={description} repo={repo} page={page}/>
   }
 }
 

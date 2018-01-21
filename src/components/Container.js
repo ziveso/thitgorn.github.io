@@ -17,9 +17,13 @@ class Container extends React.Component {
     return (<div>
               <Welcome/>
               <div className="container">
-                <div className="about">
-                  <Profile data={this.state}/>
-                  <About/>
+                <div className="about row">
+                  <div className="col-md-4">
+                    <Profile data={this.state}/>
+                  </div>
+                  <div className="col-md-8">
+                    <About/>
+                  </div>
                 </div>
                 <Award/>
                 <Project/>
