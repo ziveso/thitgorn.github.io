@@ -5,6 +5,7 @@ import About from '../components/About'
 import Award from '../components/Award'
 import Project from '../components/Project'
 import '../components/Container.css'
+import { Element } from 'react-scroll'
 
 class Container extends React.Component {
 
@@ -17,6 +18,7 @@ class Container extends React.Component {
     return (<div>
               <Welcome/>
               <div className="container">
+              <Element name="Profile">
                 <div className="about row">
                   <div className="col-md-4">
                     <Profile data={this.state}/>
@@ -25,6 +27,7 @@ class Container extends React.Component {
                     <About/>
                   </div>
                 </div>
+              </Element>
                 <Award/>
                 <Project/>
               </div>

@@ -32,6 +32,16 @@
   }
 }
 
+.abc {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left:-20px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
 .arrow {
   position: absolute;
   bottom: 10px;
