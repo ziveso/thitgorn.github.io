@@ -4,6 +4,10 @@ import DisasterBox from '../components/project/DisasterBox'
 import Remec from '../components/project/Remec'
 import SkeChayen from '../components/project/SkeChayen'
 import Smarthouse from '../components/project/Smarthouse'
+import MazeCreater from '../components/project/MazeCreater'
+import MazeRunner from '../components/project/MazeRunner'
+import TillingBlock from '../components/project/TillingBlock'
+import XOai from '../components/project/XOai'
 
 class Project extends React.Component {
   render() {
@@ -24,6 +28,18 @@ class Project extends React.Component {
                 </div>
                 <div className="col-sm-6 col-md-3">
                   <Smarthouse/>
+                </div>
+                <div className="col-sm-6 col-md-3">
+                  <MazeCreater/>
+                </div>
+                <div className="col-sm-6 col-md-3">
+                  <MazeRunner/>
+                </div>
+                <div className="col-sm-6 col-md-3">
+                  <TillingBlock/>
+                </div>
+                <div className="col-sm-6 col-md-3">
+                  <XOai/>
                 </div>
               </div>
             </div>);
