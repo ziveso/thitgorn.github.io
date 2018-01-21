@@ -1,9 +1,9 @@
 {
   "short_name": "THITIWAT THONGBOR",
-  "name": "Create React App Sample",
+  "name": "THITIWAT THONGBOR",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "semicolon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

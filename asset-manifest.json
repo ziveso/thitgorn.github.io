@@ -1,12 +1,19 @@
 {
-  "main.css": "static/css/main.0f2668a4.css",
-  "main.css.map": "static/css/main.0f2668a4.css.map",
-  "main.js": "static/js/main.4c27919d.js",
-  "main.js.map": "static/js/main.4c27919d.js.map",
+  "main.css": "static/css/main.b2303d90.css",
+  "main.css.map": "static/css/main.b2303d90.css.map",
+  "main.js": "static/js/main.7bd3b499.js",
+  "main.js.map": "static/js/main.7bd3b499.js.map",
+  "static/media/MazeCreater.png": "static/media/MazeCreater.76f42bba.png",
+  "static/media/MazeRunner.png": "static/media/MazeRunner.4133e0e8.png",
+  "static/media/TillingBlock.png": "static/media/TillingBlock.7774641f.png",
+  "static/media/XO_AI.png": "static/media/XO_AI.4c1ea4b3.png",
   "static/media/barcamp.png": "static/media/barcamp.930a9fcf.png",
   "static/media/chayen.png": "static/media/chayen.fd9f7e02.png",
   "static/media/disaster.png": "static/media/disaster.93e33c74.png",
+  "static/media/facebook.ico": "static/media/facebook.54476bca.ico",
+  "static/media/github.png": "static/media/github.3eb2edd1.png",
   "static/media/localhackday.png": "static/media/localhackday.1edac9ca.png",
+  "static/media/mail.ico": "static/media/mail.952e3f04.ico",
   "static/media/remec.png": "static/media/remec.27e547c9.png",
   "static/media/smarthouse.png": "static/media/smarthouse.2e9451a5.png"
 }
