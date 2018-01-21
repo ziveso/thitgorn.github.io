@@ -4,7 +4,7 @@ import bcbk from '../../images/barcamp.png'
 import Card from '../Card'
 
 const title = "BCBK 8"
-const description = "test"
+const description = "Barcamp Bangkhen 8 website. Tools - React, Repo is private."
 const repo = null;
 const page = "http://2017.barcampbangkhen.org"
 class Barcamp extends React.Component {

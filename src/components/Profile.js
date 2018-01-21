@@ -1,5 +1,9 @@
 import React from 'react'
 import '../components/Profile.css'
+import Mail from '../images/icon/mail.ico'
+import Github from '../images/icon/github.png'
+import Facebook from '../images/icon/facebook.ico'
+import Twitter from '../images/icon/twitter.png'
 
 class Profile extends React.Component{
 
@@ -16,14 +20,14 @@ class Profile extends React.Component{
                   <h1>{this.state.name}</h1>
                   <h6>Software Developer</h6>
                   <h3>{this.state.username}</h3>
-                  <a herf="mailto:thitiwat.tho1@ku.th">(MAIL): thitiwat.tho1@ku.th</a><br/>
+                  <a href="mailto:thitiwat.tho1@ku.th"><img src={Mail} style={{width:"32px" , height:"32px"}} alt={Mail}/>: thitiwat.tho1@ku.th</a><br/>
 
-                  <a herf="https://github.com/thitgorn">(GITHUB): https://www.github.com/thitgorn</a><br/>
-                  <div>follower : {this.state.follower} following : {this.state.following}</div>
+                  <a href="https://github.com/thitgorn"><img src={Github} style={{width:"32px" , height:"32px"}} alt={Github}/>: thitgorn<br/>
+                  <div>follower : {this.state.follower} following : {this.state.following}</div></a>
 
-                  <a herf="https://www.facebook.com/thitiwat.thongbor">(FACEBOOK): https://www.github.com/thitgorn</a><br/>
+                  <a href="https://www.facebook.com/thitiwat.thongbor"><img src={Facebook} style={{width:"32px" , height:"32px"}} alt={Facebook}/>: thitiwat.thongbor</a><br/>
 
-                  <a herf="https://twitter.com/GuyZivesO">(TWITTER): https://www.github.com/thitgorn</a><br/>
+                  <a href="https://twitter.com/GuyZivesO"><img src={Twitter} style={{width:"32px" , height:"32px"}} alt={Twitter}/>: GuyZivesO</a><br/>
                 </div>
               </div>
             </div>)

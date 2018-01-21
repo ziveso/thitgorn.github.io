@@ -4,7 +4,7 @@ import smarthouse from '../../images/smarthouse.png'
 import Card from '../Card'
 
 const title = "Smarthouse"
-const description = "test"
+const description = "Automatic Etectric switch in house. Tools - Jquery"
 const repo = "https://github.com/thitgorn/smarthouse"
 class Smarthouse extends React.Component {
   render() {

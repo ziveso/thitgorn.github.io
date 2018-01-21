@@ -4,7 +4,7 @@ import disas from '../../images/disaster.png'
 import Card from '../Card'
 
 const title = "DisasterBox"
-const description = "test"
+const description = "Natural Disaster Detector tools. Tools - Jquery"
 const repo = "https://github.com/thitgorn/disaster-box"
 const page = "https://thitgorn.github.io/disaster-box"
 class DisasterBox extends React.Component {

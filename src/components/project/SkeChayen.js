@@ -4,7 +4,7 @@ import Card from '../Card'
 
 
 const title = "SkeChayen"
-const description = "test"
+const description = "Guessing the words Game. Tools - node.js, Jquery"
 const repo = "https://github.com/thitgorn/ske-chayen"
 const page = null
 class SkeChayen extends React.Component {
