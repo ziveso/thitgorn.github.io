@@ -5,8 +5,8 @@ import Card from '../Card'
 
 const title = "Remec"
 const description = "Remote Control Application. Tools - Java, Android"
-const repo = "https://github.com/thitgorn/Remec"
-const page = "https://thitgorn.github.io/Remec"
+const repo = "https://github.com/thitgorn/remec"
+const page = "https://thitgorn.github.io/remec"
 class Remec extends React.Component {
   render() {
     return <Card img={remec} title={title} description={description} repo={repo} page={page}/>
