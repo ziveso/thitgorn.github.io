@@ -5,9 +5,9 @@ var content = {
   header: 'Thitiwat Thongbor',
   content: (
     <span>
-      Hi! I'm Guy! currently studying Software and Knowledge Engineering at Kasetsart University.<br/>
-      Eager to learn new things with newest tools. Adaptive Person and High skill with teamwork!. <br/>
-      I'm Also looking for any internship program.
+      &emsp;Hi! I'm Guy! currently studying Software and Knowledge Engineering at Kasetsart University.
+      Eager to learn new things with newest tools. Adaptive and Collaborate Person. Familiar with version control system, design patterns and UNIX command. <br/>
+      <b>"I'm Also looking for any internship program."</b>
     </span>
   )
 }
@@ -43,7 +43,7 @@ const skills = [ {
 
 class About extends React.Component {
   getSkills() {
-    return skills.map( (skill)=> {
+    return skills.map( (skill,i)=> {
       var color = null
       if(skill.percent >= 70)
         color = "bg-red"
@@ -54,7 +54,7 @@ class About extends React.Component {
       else
         color = "bg-green"
 
-      return (<div>
+      return (<div key={i}>
                 <div className="progress">
                   <div className={`progress-bar control ${color}`} role="progressbar" style={{width: `${skill.percent}%`}} >{skill.text} - {skill.percent} %</div>
                 </div>

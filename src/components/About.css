@@ -1,4 +1,9 @@
+h1 {
+  font-family: monospace;
+}
+
 .Paragraph {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   padding: 10px 10px 10px 10px;
   background:  #b7f9f7;
   border: 2px solid #7cece8;

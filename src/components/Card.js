@@ -1,5 +1,4 @@
 import React from 'react'
-
 var style = {
   margin:"15px 5px 5px 5px"
 }
