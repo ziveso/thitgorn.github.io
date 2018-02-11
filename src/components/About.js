@@ -11,50 +11,63 @@ var content = {
     </span>
   )
 }
-// java 90
-// C 90
-// c++ 30
-// ruby 30
-// javascript 70
-// css 60
-// html 100
-// react 80
-// JQUERY 50
-class About extends React.Component {
 
+const skills = [ {
+  text:"JAVA",
+  percent:80
+}, {
+  text:"C",
+  percent:75
+}, {
+  text:"React",
+  percent:70
+}, {
+  text:"Javascript",
+  percent:65
+}, {
+  text:"Jquery",
+  percent:60
+}, {
+  text:"CSS",
+  percent:50
+}, {
+  text:"SCSS",
+  percent:40
+}, {
+  text:"Python",
+  percent:35
+}, {
+  text:"Ruby",
+  percent:30
+} ]
+
+class About extends React.Component {
+  getSkills() {
+    return skills.map( (skill)=> {
+      var color = null
+      if(skill.percent >= 70)
+        color = "bg-red"
+      else if (skill.percent > 50)
+        color = "bg-orange"
+      else if (skill.percent > 35)
+        color = "bg-blue"
+      else
+        color = "bg-green"
+
+      return (<div>
+                <div className="progress">
+                  <div className={`progress-bar control ${color}`} role="progressbar" style={{width: `${skill.percent}%`}} >{skill.text} - {skill.percent} %</div>
+                </div>
+              </div>)
+    })
+  }
   render () {
     return (<div className="container">
               <h1>{content.header}</h1>
               <div className="Paragraph">{content.content}</div>
               <h1>SKILL</h1>
               <div className="skill container">
-                <div className="progress">
-                  <div className="progress-bar bg-dark" role="progressbar" style={{width: "90%"}} >JAVA - 90%</div>
-                </div>
-                <div className="progress">
-                  <div className="progress-bar bg-dark" role="progressbar" style={{width: "80%"}}>C - 80%</div>
-                </div>
-                <div className="progress">
-                  <div className="progress-bar bg-dark" role="progressbar" style={{width: "30%"}}>C++ - 30%</div>
-                </div>
-                <div className="progress">
-                  <div className="progress-bar bg-dark" role="progressbar" style={{width: "30%"}}>Ruby - 30%</div>
-                </div>
-                <div className="progress">
-                  <div className="progress-bar bg-dark" role="progressbar" style={{width: "70%"}}>Javascript - 70%</div>
-                </div>
-                <div className="progress">
-                  <div className="progress-bar bg-dark" role="progressbar" style={{width: "60%"}}>CSS - 60%</div>
-                </div>
-                <div className="progress">
-                  <div className="progress-bar bg-dark" role="progressbar" style={{width: "100%"}}>HTML - 100%</div>
-                </div>
-                <div className="progress">
-                  <div className="progress-bar bg-dark" role="progressbar" style={{width: "80%"}}>React - 80%</div>
-                </div>
-                <div className="progress">
-                  <div className="progress-bar bg-dark" role="progressbar" style={{width: "50%"}}>Jquery - 50%</div>
-                </div>
+                {this.getSkills()}
               </div>
             </div>)
   }

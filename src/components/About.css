@@ -7,6 +7,18 @@
 
 .progress {
   margin: 20px 20px 20px 20px;
+  font-size: 13px;
+  height: 35px;
+}
+
+.progress:hover {
+  background-color: grey !important;
+}
+
+@media (max-width:480px) {
+  .progress {
+    font-size: 10px;
+  }
 }
 
 .skill {
@@ -17,9 +29,49 @@
   border-radius: 5px;
 }
 
-.bg-dark {
+.control {
+  text-align: left;
+  padding-left: 20px;
+  color: black;
+  text-shadow:
+   -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+     1px 1px 0 #FFFFFF;
+}
+
+.bg-red {
+  background-color: red !important;
+}
+
+.bg-red:hover {
+  background-color: black !important;
+  font-size: 17px;
+}
+
+.bg-orange {
   background-color: orange !important;
 }
-.bg-dark:hover {
+
+.bg-orange:hover {
   background-color: black !important;
+  font-size: 17px;
+}
+
+.bg-blue {
+  background-color: blue !important;
+}
+
+.bg-blue:hover {
+  background-color: black !important;
+  font-size: 17px;
+}
+
+.bg-green {
+  background-color: green !important;
+}
+
+.bg-green:hover {
+  background-color: black !important;
+  font-size: 17px;
 }

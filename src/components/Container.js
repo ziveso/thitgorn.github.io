@@ -11,23 +11,30 @@ class Container extends React.Component {
 
   constructor( props ) {
     super( props )
-    this.state = props
+    this.state = {
+      p : props,
+    }
   }
+
 
   render() {
     return (<div>
-              <Welcome/>
-              <div className="container">
-              <Element name="Profile">
-                <div className="about row">
-                  <div className="col-md-4">
-                    <Profile data={this.state}/>
-                  </div>
-                  <div className="col-md-8">
-                    <About/>
-                  </div>
-                </div>
+              <Element name="Welcome">
+                <Welcome/>
               </Element>
+
+              <div className="container">
+                <Element name="Profile">
+                  <div className="about row">
+                    <div className="col-md-4">
+                      <Profile data={this.state.p}/>
+                    </div>
+                    <div className="col-md-8">
+                      <About/>
+                    </div>
+                  </div>
+                </Element>
+
                 <Award/>
                 <Project/>
               </div>
