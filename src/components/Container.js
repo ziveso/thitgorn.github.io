@@ -4,6 +4,7 @@ import Profile from '../components/Profile'
 import About from '../components/About'
 import Award from '../components/Award'
 import Project from '../components/Project'
+import RelatedCouse from '../components/RelatedCouse'
 import '../components/Container.css'
 import { Element } from 'react-scroll'
 
@@ -34,7 +35,7 @@ class Container extends React.Component {
                     </div>
                   </div>
                 </Element>
-
+                <RelatedCouse/>
                 <Award/>
                 <Project/>
               </div>
