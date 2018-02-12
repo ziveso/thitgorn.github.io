@@ -15,12 +15,12 @@ class Popup extends React.Component {
     return (<div>
                 <div onClick={()=>{this.props.hide()}} className="fullscreen">
                 </div>
-                <div className="AlwaysOnT">
+                <div className="AlwaysOnT" onKeyDown={(event)=>{ event.key==='Escape'? this.props.hide():console.log() }} tabIndex="0">
                     <ImageLoader
                       src={this.props.img}
                     >
-                      <img width={`100%`} height={`100%`}/>
-                      <div>Error!</div>
+                      <img width={`100%`} height={`100%`} alt={this.props.img}/>
+                      <Preloader />
                       <Preloader />
                     </ImageLoader>
                 </div>
