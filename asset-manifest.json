@@ -1,21 +1,25 @@
 {
   "main.css": "static/css/main.cee4d04f.css",
   "main.css.map": "static/css/main.cee4d04f.css.map",
-  "main.js": "static/js/main.9d6a14af.js",
-  "main.js.map": "static/js/main.9d6a14af.js.map",
+  "main.js": "static/js/main.625516cc.js",
+  "main.js.map": "static/js/main.625516cc.js.map",
   "static/media/MazeCreater.png": "static/media/MazeCreater.76f42bba.png",
   "static/media/MazeRunner.png": "static/media/MazeRunner.4133e0e8.png",
   "static/media/TillingBlock.png": "static/media/TillingBlock.7774641f.png",
   "static/media/XO_AI.png": "static/media/XO_AI.4c1ea4b3.png",
   "static/media/barcamp.gif": "static/media/barcamp.fffcf451.gif",
   "static/media/barcamp.png": "static/media/barcamp.930a9fcf.png",
+  "static/media/block.gif": "static/media/block.007984f0.gif",
+  "static/media/chayen.gif": "static/media/chayen.2ba66072.gif",
   "static/media/chayen.png": "static/media/chayen.fd9f7e02.png",
   "static/media/disaster.png": "static/media/disaster.93e33c74.png",
   "static/media/facebook.ico": "static/media/facebook.54476bca.ico",
   "static/media/github.png": "static/media/github.3eb2edd1.png",
   "static/media/localhackday.png": "static/media/localhackday.1edac9ca.png",
   "static/media/mail.ico": "static/media/mail.952e3f04.ico",
+  "static/media/maze.gif": "static/media/maze.62d96065.gif",
   "static/media/remec.png": "static/media/remec.27e547c9.png",
   "static/media/smarthouse.png": "static/media/smarthouse.2e9451a5.png",
-  "static/media/spinner.gif": "static/media/spinner.90806073.gif"
+  "static/media/spinner.gif": "static/media/spinner.90806073.gif",
+  "static/media/xo.gif": "static/media/xo.dd133a3e.gif"
 }
