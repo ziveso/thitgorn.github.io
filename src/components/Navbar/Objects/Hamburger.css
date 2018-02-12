@@ -1,0 +1,25 @@
+.btn-menu{
+  border: 1px solid rgba(255,255,255,0.4);
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 5vh;
+}
+
+.line-1{
+  height:1px;
+  border-bottom:1px solid rgba(255,255,255,0.8);
+  margin-top: 7px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.line-2{
+  height:1px;
+  border-bottom:1px solid rgba(255,255,255,0.8);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}

@@ -3,6 +3,10 @@
   display: flex;
 }
 
+.navSpace {
+  margin-left: 60px;
+}
+
 @media (max-width:480px) {
   .about {
     display: block;

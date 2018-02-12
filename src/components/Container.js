@@ -5,6 +5,9 @@ import About from './About/About'
 import Award from './Award/Award'
 import Project from './Project/Project'
 import RelatedCouse from './Course/RelatedCouse'
+
+import Navbar from './Navbar/Navbar'
+
 import './Container.css'
 import { Element } from 'react-scroll'
 
@@ -19,7 +22,7 @@ class Container extends React.Component {
 
 
   render() {
-    return (<div>
+    return (<div className="navSpace">
               <Element name="Welcome">
                 <Welcome/>
               </Element>
@@ -45,6 +48,7 @@ class Container extends React.Component {
                   <Project/>
                 </Element>
               </div>
+              <Navbar/>
             </div>)
   }
 }
