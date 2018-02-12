@@ -5444,6 +5444,10 @@ react-image-gallery@^0.8.7:
     prop-types "^15.5.8"
     react-swipeable "^4.0.0"
 
+react-load-image@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/react-load-image/-/react-load-image-0.1.6.tgz#abafacb18813983a8af43d9f2fe9ed7bf89ca29a"
+
 react-scroll@^1.7.6:
   version "1.7.6"
   resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.7.6.tgz#826102e6a9de30142cd8450f190b0fed87171ff6"
