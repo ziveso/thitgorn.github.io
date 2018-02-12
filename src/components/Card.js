@@ -18,6 +18,7 @@ class Card extends React.Component {
     }
     this.show = this.show.bind(this)
     this.hide = this.hide.bind(this)
+    this.onKeyPressed = this.onKeyPressed.bind(this)
   }
 
   getBTN() {
@@ -52,10 +53,16 @@ class Card extends React.Component {
     return null
   }
 
+  onKeyPressed(event) {
+    if(event.key==='Escape'){
+      this.setState({ visible: false })
+    }
+  }
+
   render() {
     return (<div className="container" style={style}>
                 <div className="card">
-                  <img className="card-img-top img-responsive hoverCursor" src={this.props.img} alt={this.props.img} onClick={()=>{this.show()}}/>
+                  <img onKeyDown={this.onKeyPressed} tabIndex="0" className="card-img-top img-responsive hoverCursor" src={this.props.img} alt={this.props.img} onClick={()=>{this.show()}}/>
                   <div className="card-block">
                     <h4 className="card-title">{this.props.title}</h4>
                     <p className="card-text">{this.props.description}</p>
