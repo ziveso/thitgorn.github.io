@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.e4cd4bb3.css",
-  "main.css.map": "static/css/main.e4cd4bb3.css.map",
-  "main.js": "static/js/main.3b71d1fd.js",
-  "main.js.map": "static/js/main.3b71d1fd.js.map",
+  "main.css": "static/css/main.4c14c3df.css",
+  "main.css.map": "static/css/main.4c14c3df.css.map",
+  "main.js": "static/js/main.9d6a14af.js",
+  "main.js.map": "static/js/main.9d6a14af.js.map",
   "static/media/MazeCreater.png": "static/media/MazeCreater.76f42bba.png",
   "static/media/MazeRunner.png": "static/media/MazeRunner.4133e0e8.png",
   "static/media/TillingBlock.png": "static/media/TillingBlock.7774641f.png",
@@ -17,5 +17,5 @@
   "static/media/mail.ico": "static/media/mail.952e3f04.ico",
   "static/media/remec.png": "static/media/remec.27e547c9.png",
   "static/media/smarthouse.png": "static/media/smarthouse.2e9451a5.png",
-  "static/media/spinner.gif": "static/media/spinner.44271f65.gif"
+  "static/media/spinner.gif": "static/media/spinner.90806073.gif"
 }
