@@ -13,6 +13,7 @@ class Project extends React.Component {
   render() {
     return (<div>
               <h1>WORK EXPERIENCE</h1>
+              <h5>(Click picture for more detail)</h5>
               <div className="row">
                 <div className="col-sm-6 col-md-3">
                   <Barcamp/>
