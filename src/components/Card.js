@@ -45,7 +45,9 @@ class Card extends React.Component {
 
   getPopUp() {
     if(this.state.visible) {
-      return <Popup img={this.props.img} hide={this.hide}/>
+      if(this.props.gif==null)
+          return <Popup img={this.props.img} hide={this.hide}/>
+      return <Popup img={this.props.gif} hide={this.hide}/>
     }
     return null
   }
