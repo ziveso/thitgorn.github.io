@@ -1,0 +1,26 @@
+.AlwaysOnTop {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  animation: Fadein 2s;
+}
+
+.stoke{
+  text-shadow: -1px -1px 0 #FFFFFF,
+               1px -1px 0 #FFFFFF,
+               -1px 1px 0 #FFFFFF,
+                1px 1px 0 #FFFFFF;
+}
+
+.stokeOrange{
+  text-shadow: -1px -1px 0 #FF9D6C,
+               1px -1px 0 #FF9D6C,
+               -1px 1px 0 #FF9D6C,
+                1px 1px 0 #FF9D6C;
+}
+
+a:hover {
+  cursor: pointer;
+}
