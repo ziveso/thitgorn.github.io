@@ -5,7 +5,6 @@ import About from '../components/About'
 import Award from '../components/Award'
 import Project from '../components/Project'
 import RelatedCouse from '../components/RelatedCouse'
-import Navbar from './Navbar'
 import '../components/Container.css'
 import { Element } from 'react-scroll'
 
@@ -46,7 +45,6 @@ class Container extends React.Component {
                   <Project/>
                 </Element>
               </div>
-              <Navbar/>
             </div>)
   }
 }
