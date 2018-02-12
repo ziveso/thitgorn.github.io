@@ -10,10 +10,12 @@ class Popup extends React.Component {
   }
 
   render() {
-    return (<div onClick={()=>{this.props.hide()}} className="fullscreen">
-              <div className="AlwaysOnT">
-                  <img src={this.props.img} alt={this.props.img} width={`100%`} height={`100%`}/>
-              </div>
+    return (<div>
+                <div onClick={()=>{this.props.hide()}} className="fullscreen">
+                </div>
+                <div className="AlwaysOnT">
+                    <img src={this.props.img} alt={this.props.img} width={`100%`} height={`100%`}/>
+                </div>
             </div>)
   }
 }
