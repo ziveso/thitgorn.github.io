@@ -1,13 +1,13 @@
 import React from 'react'
-import Barcamp from '../components/project/Barcamp'
-import DisasterBox from '../components/project/DisasterBox'
-import Remec from '../components/project/Remec'
-import SkeChayen from '../components/project/SkeChayen'
-import Smarthouse from '../components/project/Smarthouse'
-import MazeCreater from '../components/project/MazeCreater'
-import MazeRunner from '../components/project/MazeRunner'
-import TillingBlock from '../components/project/TillingBlock'
-import XOai from '../components/project/XOai'
+import Barcamp from './Barcamp'
+import DisasterBox from './DisasterBox'
+import Remec from './Remec'
+import SkeChayen from './SkeChayen'
+import Smarthouse from './Smarthouse'
+import MazeCreater from './MazeCreater'
+import MazeRunner from './MazeRunner'
+import TillingBlock from './TillingBlock'
+import XOai from './XOai'
 
 class Project extends React.Component {
   render() {

@@ -1,9 +1,9 @@
 import React from 'react'
-import '../components/Profile.css'
-import Mail from '../images/icon/mail.ico'
-import Github from '../images/icon/github.png'
-import Facebook from '../images/icon/facebook.ico'
-import Twitter from '../images/icon/twitter.png'
+import './Profile.css'
+import Mail from '../../images/icon/mail.ico'
+import Github from '../../images/icon/github.png'
+import Facebook from '../../images/icon/facebook.ico'
+import Twitter from '../../images/icon/twitter.png'
 
 class Profile extends React.Component{
 

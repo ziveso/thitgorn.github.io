@@ -1,7 +1,7 @@
 import React from 'react'
 import './central.css'
 import smarthouse from '../../images/smarthouse.png'
-import Card from '../Card'
+import Card from '../Card/Card'
 
 const title = "Smarthouse"
 const description = "Automatic Etectric switch in house. Tools - Jquery"

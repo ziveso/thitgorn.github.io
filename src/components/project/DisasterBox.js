@@ -1,7 +1,7 @@
 import React from 'react'
 import './central.css'
 import disas from '../../images/disaster.png'
-import Card from '../Card'
+import Card from '../Card/Card'
 
 const title = "DisasterBox"
 const description = "Natural Disaster Detector tools. Tools - Jquery"

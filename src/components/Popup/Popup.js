@@ -1,7 +1,7 @@
 import React from 'react'
 import './Popup.css'
 import ImageLoader from 'react-load-image';
-import Preloader from './Preloader'
+import Preloader from '../Preloader'
 
 class Popup extends React.Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import React from 'react'
 import './central.css'
 import Mazecreater from '../../images/MazeCreater.png'
-import Card from '../Card'
+import Card from '../Card/Card'
 
 const title = "Maze Generator"
 const description = "Create the maze with non-cycle. Tools - C"

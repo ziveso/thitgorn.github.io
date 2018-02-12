@@ -1,7 +1,7 @@
 import React from 'react'
 import './central.css'
 import Mazerunncer from '../../images/MazeRunner.png'
-import Card from '../Card'
+import Card from '../Card/Card'
 import MazeGIF from '../../images/gif/maze.gif'
 
 const title = "Maze Runner"

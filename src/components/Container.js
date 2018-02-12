@@ -1,11 +1,11 @@
 import React from 'react'
-import Welcome from '../components/Welcome'
-import Profile from '../components/Profile'
-import About from '../components/About'
-import Award from '../components/Award'
-import Project from '../components/Project'
-import RelatedCouse from '../components/RelatedCouse'
-import '../components/Container.css'
+import Welcome from './Welcome/Welcome'
+import Profile from './Profile/Profile'
+import About from './About/About'
+import Award from './Award/Award'
+import Project from './Project/Project'
+import RelatedCouse from './Course/RelatedCouse'
+import './Container.css'
 import { Element } from 'react-scroll'
 
 class Container extends React.Component {

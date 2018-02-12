@@ -2,7 +2,7 @@ import React from 'react'
 import './central.css'
 import bcbk from '../../images/barcamp.png'
 import bcbkgif from '../../images/gif/barcamp.gif'
-import Card from '../Card'
+import Card from '../Card/Card'
 
 const title = "BCBK 8"
 const description = "Barcamp Bangkhen 8 website. Tools - React, Repo is private."

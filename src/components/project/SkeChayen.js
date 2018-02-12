@@ -1,6 +1,6 @@
 import React from 'react'
 import chayen from '../../images/chayen.png'
-import Card from '../Card'
+import Card from '../Card/Card'
 import Gif from '../../images/gif/chayen.gif'
 
 const title = "SkeChayen"

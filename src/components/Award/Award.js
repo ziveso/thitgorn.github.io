@@ -1,6 +1,6 @@
 import React from 'react'
-import localhackday from '../images/localhackday.png'
-import Card from './Card'
+import localhackday from '../../images/localhackday.png'
+import Card from '../Card/Card'
 
 const title = "LOCAL HACKDAY - Hackaton 2016"
 const description = "1st Place Local Hackday host by Github and Major Hack league. Tools - Android, JAVA"

@@ -1,7 +1,7 @@
 import React from 'react'
 import './central.css'
 import Tillingblock from '../../images/TillingBlock.png'
-import Card from '../Card'
+import Card from '../Card/Card'
 import gifimg from '../../images/gif/block.gif'
 
 const title = "Till L Block"

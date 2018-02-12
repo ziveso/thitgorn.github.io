@@ -1,5 +1,5 @@
 import React from 'react'
-import Popup from './Popup'
+import Popup from '../Popup/Popup'
 import './Card.css'
 
 var style = {

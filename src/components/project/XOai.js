@@ -1,7 +1,7 @@
 import React from 'react'
 import './central.css'
 import XO_ai from '../../images/XO_AI.png'
-import Card from '../Card'
+import Card from '../Card/Card'
 import XOGif from '../../images/gif/xo.gif'
 
 const title = "XO bot"
