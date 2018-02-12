@@ -1,17 +1,19 @@
 import React from 'react'
-
-var AlwaysOnT = {
-  position: "fixed",
-  height: `90vh`,
-  width: `90%`,
-  margin: `5vh 5% 5vh 5%`,
-  background: "black"
-}
+import './Popup.css'
 
 class Popup extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      visible: this.props.visible
+    }
+  }
+
   render() {
-    return (<div style={AlwaysOnT}>
-                <img src={this.props.img} alt={this.props.img} width={`100%`} height={`100%`}/>
+    return (<div onClick={()=>{this.props.hide()}} className="fullscreen">
+              <div className="AlwaysOnT">
+                  <img src={this.props.img} alt={this.props.img} width={`100%`} height={`100%`}/>
+              </div>
             </div>)
   }
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import Popup from './Popup'
+import './Card.css'
+
 var style = {
   margin:"15px 5px 5px 5px"
 }
@@ -12,10 +14,12 @@ class Card extends React.Component {
   constructor() {
     super()
     this.state = {
-      isClick : false
+      visible : false
     }
-    this.handleClick = this.handleClick.bind(this)
+    this.show = this.show.bind(this)
+    this.hide = this.hide.bind(this)
   }
+
   getBTN() {
     var a,b
     if(this.props.repo != null) {
@@ -31,13 +35,17 @@ class Card extends React.Component {
     return (<div>{a}{b}</div>)
   }
 
-  handleClick() {
-    this.setState({isClick:true})
+  show() {
+      this.setState({ visible: true });
   }
 
-  getPopUP() {
-    if(this.state.isClick) {
-      return <Popup/>
+  hide() {
+      this.setState({ visible: false });
+  }
+
+  getPopUp() {
+    if(this.state.visible) {
+      return <Popup img={this.props.img} hide={this.hide}/>
     }
     return null
   }
@@ -45,14 +53,15 @@ class Card extends React.Component {
   render() {
     return (<div className="container" style={style}>
                 <div className="card">
-                  <img className="card-img-top img-responsive" src={this.props.img} alt={this.props.img} onClick={()=>{this.handleClick()}}/>
+                  <img className="card-img-top img-responsive hoverCursor" src={this.props.img} alt={this.props.img} onClick={()=>{this.show()}}/>
                   <div className="card-block">
                     <h4 className="card-title">{this.props.title}</h4>
                     <p className="card-text">{this.props.description}</p>
                     <div>{this.getBTN()}</div>
                   </div>
+                  {this.getPopUp()}
                 </div>
-                <div>{this.getPopUP()}</div>
+
             </div>)
   }
 }

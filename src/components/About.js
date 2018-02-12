@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components/About.css'
+import './About.css'
 
 var content = {
   header: 'Thitiwat Thongbor',
