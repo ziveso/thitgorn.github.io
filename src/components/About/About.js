@@ -1,16 +1,7 @@
 import React from 'react'
 import './About.css'
 
-var content = {
-  header: 'Thitiwat Thongbor',
-  content: (
-    <span>
-      &emsp;Hi! I'm Guy! currently studying Software and Knowledge Engineering at Kasetsart University.
-      Eager to learn new things with newest tools. Adaptive and Collaborate Person. Familiar with version control system, design patterns and UNIX command. <br/>
-      <b>"I'm Also looking for any internship program."</b>
-    </span>
-  )
-}
+
 
 const skills = [ {
   text:"JAVA",

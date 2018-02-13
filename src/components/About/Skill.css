@@ -15,6 +15,13 @@
   right: 0%;
 }
 
+@media (min-width:768px) {
+  .skill-wrapper{
+    width: 40%;
+    right: -35%;
+  }
+}
+
 .toggler {
   margin-top: 45vh;
   height: 20px;
