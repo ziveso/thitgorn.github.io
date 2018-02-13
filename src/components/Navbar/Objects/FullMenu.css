@@ -9,6 +9,18 @@
   animation: slideRight 1s;
 }
 
+@media (max-width:768px) {
+  .nav-full {
+    width: 100%;
+    animation: slideLeftMobile 1s;
+  }
+}
+
+@keyframes slideLeftMobile {
+  from {left:60%}
+  to {left:0}
+}
+
 @keyframes slideRight {
   from {left:-240px}
   to {left:0}

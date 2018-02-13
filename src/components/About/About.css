@@ -30,11 +30,7 @@ h5 {
   background-color: grey !important;
 }
 
-@media (max-width:480px) {
-  .progress {
-    font-size: 10px;
-  }
-}
+
 
 /* .skill {
   padding-top: 10px;
