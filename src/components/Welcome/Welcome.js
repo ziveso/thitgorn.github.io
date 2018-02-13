@@ -117,6 +117,9 @@ class Welcome extends React.Component {
                     </textarea>
                     </div>
                 </form>
+                <div className="abc" onClick={this.scroll}>
+                    <div className="arrow bounce"></div>
+                </div>
             </div>)
   }
 }
