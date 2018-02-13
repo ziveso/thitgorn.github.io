@@ -1,10 +1,7 @@
 import React from 'react'
 import './Welcome.css'
+import Command from './Command'
 import { scroller } from 'react-scroll'
-
-var style = {
-  display: 'flex' ,
-};
 
 const USERNAME = "user $:"
 const Greeting = "login as unknown user\n\ncat README.txt\n"
@@ -18,7 +15,6 @@ class Welcome extends React.Component {
     this.state = {value: Greeting + README + USERNAME};
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.handleCommand = this.handleCommand.bind(this);
   }
 
@@ -32,53 +28,88 @@ class Welcome extends React.Component {
   }
 
   handleChange(event) {
+    var oldString = this.state.value
+    if(!this.checkPositionType(event)) {
+      this.setState({value:oldString})
+      return;
+    }
     if (event.target.value.substring(event.target.value.length-6 , event.target.value.length)==='user $')
       event.target.value=event.target.value+":"
     var inputChar = event.target.value.charAt(event.target.value.length-1)
     this.setState({value: event.target.value})
     if(inputChar==='\n') {
-      var cmd = this.getCommand()
-      if(cmd==="Enter") {
-        this.setState({value: event.target.value + USERNAME})
-      } else if(cmd=="clear"){
-        this.setState({value: USERNAME})
-      } else {
-        var output = this.handleCommand(cmd)
-        this.setState({value: event.target.value + output + "\n" + USERNAME})
-      }
+      this.handleCommand(this.getCommand() , event)
     }
   }
 
+  checkPositionType(event) {
+    var newString = event.target.value
+    var oldString = this.state.value
+    if(newString.slice(0,-1)===oldString) {
+      return true;
+    }
+    if(newString===oldString.slice(0,-1)) {
+      return true;
+    }
+    return false;
+  }
   getCommand() {
     var s = this.state.value.split(USERNAME)
     var a = s[s.length - 1]
     a = a.trim()
-    if(a=="")
+    if(a==="")
       return "Enter"
+    console.log(a);
     return a
   }
 
-  handleCommand(cmd) {
+  handleCommand(cmd,event) {
     var output = ""
     console.log(cmd);
     switch(cmd) {
-      case "Enter": break;
-      case "next": output = "next()"; this.scroll(); break;
-      case "whoami": output = "Thitiwat Thongbor"; break;
-      case "clear": output = "clear";break;
+      case "enter":
+                    this.setState({value: event.target.value + USERNAME})
+                    break;
+      case "next":
+                    output = Command.next;
+                    this.scroll();
+                    break;
+      case "whoami":
+                    output = Command.whoami;
+                    break;
+      case "clear":
+                    this.setState({value: USERNAME})
+                    break;
+      case "about":
+                    output = Command.about;
+                    break;
+      case "experience":
+                    output = Command.experience;
+                    break;
+      case "award":
+                    output = Command.award;
+                    break;
+      case "contact":
+                    output = Command.contact;
+                    break;
+      case "ls":
+                    output = Command.ls;
+                    break;
+      case "cmd":
+                    output = Command.cmd;
+                    break;
+      case "cat README.txt":
+                    output = Command.README;
+                    break;
       default: output = "command not found: " + cmd;
     }
+    this.setState({value: event.target.value + output + "\n" + USERNAME})
     return output
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
-  }
-
-
   render() {
     return (<div className="welcome">
-                <form onSubmit={this.handleSubmit}>
+                <form>
                     <div>
                     <textarea type="text" value={this.state.value}
                     onChange={this.handleChange}
