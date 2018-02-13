@@ -1,7 +1,7 @@
 import React from 'react'
 import Hamburger from './Hamburger'
 import Item from './Item'
-
+import './FullMenu.css'
 const element = ['WELCOME' , 'ABOUT' , 'COURSE' , 'ACHIEVEMENT' , 'EXPERIENCE']
 
 class FullMenu extends React.Component {
@@ -14,12 +14,12 @@ class FullMenu extends React.Component {
 
   render() {
     return (<div>
+              <div className="nav-tran" onClick={()=>{this.props.toggle()}}>
+              </div>
               <div className="nav-full">
                 <div className="nav-center">
-                  <div className="">
                     <Hamburger toggle={this.props.toggle}/>
                     {this.getItem()}
-                  </div>
                 </div>
               </div>
             </div>)
