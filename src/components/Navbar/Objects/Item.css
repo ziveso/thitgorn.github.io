@@ -1,0 +1,15 @@
+.line-item {
+  width: 80%;
+  height: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin: auto;
+}
+
+.item {
+  height: 15vh;
+  color: rgba(255,255,255,0.7);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}

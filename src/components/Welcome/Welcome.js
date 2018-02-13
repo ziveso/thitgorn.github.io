@@ -9,7 +9,7 @@ var style = {
 
 class Welcome extends React.Component {
   scroll() {
-    scroller.scrollTo('Profile', {
+    scroller.scrollTo('ABOUT', {
       duration: 1000,
       delay: 50,
       smooth: "easeInQuad",

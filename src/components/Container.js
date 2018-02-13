@@ -23,12 +23,12 @@ class Container extends React.Component {
 
   render() {
     return (<div className="navSpace">
-              <Element name="Welcome">
+              <Element name="WELCOME">
                 <Welcome/>
               </Element>
 
               <div className="container">
-                <Element name="Profile">
+                <Element name="ABOUT">
                   <div className="about row">
                     <div className="col-md-4">
                       <Profile data={this.state.p}/>
@@ -38,13 +38,13 @@ class Container extends React.Component {
                     </div>
                   </div>
                 </Element>
-                <Element name="Course">
+                <Element name="COURSE">
                   <RelatedCouse/>
                 </Element>
-                <Element name="Award">
+                <Element name="ACHIEVEMENT">
                   <Award/>
                 </Element>
-                <Element name="Project">
+                <Element name="EXPERIENCE">
                   <Project/>
                 </Element>
               </div>

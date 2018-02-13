@@ -1,7 +1,10 @@
 import React from 'react'
 import Hamburger from './Objects/Hamburger'
 import FullMenu from './Objects/FullMenu'
+import Item from './Objects/Item'
 import './Navbar.css'
+
+const element = ['WELCOME' , 'ABOUT' , 'COURSE' , 'ACHIEVEMENT' , 'EXPERIENCE']
 
 class Navbar extends React.Component {
   constructor() {
@@ -22,20 +25,25 @@ class Navbar extends React.Component {
     this.setState({visible:false})
   }
 
+  getItem() {
+    return element.map((item,i) => {
+      return <Item name={item} key={i} visible={this.state.visible}/>
+    })
+  }
+
   render() {
     return (<div>
                 <div className="nav">
-                  <Hamburger toggle={this.show}/>
-                    <div className="nav-line"></div>
-                    <div className="nav-line"></div>
-                    <div className="nav-line"></div>
-                    <div className="nav-line"></div>
-                    <div className="nav-line"></div>
+                  <div>
+                    <Hamburger toggle={this.show}/>
+                    {this.getItem()}
+                  </div>
                 </div>
                 {this.state.visible && <FullMenu toggle={this.hide}/>}
             </div>
             )
   }
 }
+
 
 export default Navbar

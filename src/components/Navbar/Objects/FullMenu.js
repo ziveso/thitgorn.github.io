@@ -1,17 +1,25 @@
 import React from 'react'
 import Hamburger from './Hamburger'
-import './FullMenu.css'
+import Item from './Item'
+
+const element = ['WELCOME' , 'ABOUT' , 'COURSE' , 'ACHIEVEMENT' , 'EXPERIENCE']
 
 class FullMenu extends React.Component {
+  getItem() {
+    return element.map((item,i) => {
+      return <Item name={item} key={i} visible={true} toggle={this.props.toggle}/>
+    })
+  }
+
   render() {
-    return (<div className="development">
-              <div className="nav-full">
-                <div className="nav-center"><Hamburger toggle={this.props.toggle}/></div>
-                  <div className="nav-full-line"></div>
-                  <div className="nav-full-line"></div>
-                  <div className="nav-full-line"></div>
-                  <div className="nav-full-line"></div>
-                  <div className="nav-full-line"></div>
+    return (<div className="">
+              <div className="nav-full slideInLeft">
+                <div className="nav-center">
+                  <div className="">
+                    <Hamburger toggle={this.props.toggle}/>
+                    {this.getItem()}
+                  </div>
+                </div>
               </div>
             </div>)
   }

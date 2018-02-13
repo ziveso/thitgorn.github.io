@@ -2,10 +2,12 @@ import React from 'react'
 import './Hamburger.css'
 
 const Hamburger = (props) => {
-  return (<div className="btn-menu" onClick={()=>{props.toggle()}}>
-            <div className="line-1"></div>
-            <div className="line-2"></div>
-            <div className="line-1"></div>
+  return (<div onClick={()=>{props.toggle()}} className="text-center"> 
+            <div className="btn-menu">
+              <div className="line-1"></div>
+              <div className="line-2"></div>
+              <div className="line-1"></div>
+            </div>
             <div className="navbar-text">MENU</div>
           </div>)
 }
