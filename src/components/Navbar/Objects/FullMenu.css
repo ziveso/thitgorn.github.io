@@ -20,18 +20,3 @@
   height: 1px;
   width: 60%;
 }
-
-.slideInLeft {
-  animation: slideInLeft 0.5s;
-}
-
-@keyframes slideInLeft {
-  from {
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}

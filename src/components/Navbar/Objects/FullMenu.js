@@ -5,6 +5,7 @@ import Item from './Item'
 const element = ['WELCOME' , 'ABOUT' , 'COURSE' , 'ACHIEVEMENT' , 'EXPERIENCE']
 
 class FullMenu extends React.Component {
+
   getItem() {
     return element.map((item,i) => {
       return <Item name={item} key={i} visible={true} toggle={this.props.toggle}/>
@@ -12,8 +13,8 @@ class FullMenu extends React.Component {
   }
 
   render() {
-    return (<div className="">
-              <div className="nav-full slideInLeft">
+    return (<div>
+              <div className="nav-full">
                 <div className="nav-center">
                   <div className="">
                     <Hamburger toggle={this.props.toggle}/>

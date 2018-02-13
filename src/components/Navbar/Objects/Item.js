@@ -4,7 +4,6 @@ import { scroller } from 'react-scroll'
 
 
 class Item extends React.Component {
-
   handleScroller() {
     console.log(this.props.name);
     scroller.scrollTo(this.props.name, {
@@ -18,7 +17,7 @@ class Item extends React.Component {
   render() {
     return (<div className="item text-center">
                 <div className="line-item" onClick={ ()=>{this.handleScroller()}}>
-                    {this.props.visible && this.props.name}
+                    {this.props.visible && <div className="pointer">{this.props.name}</div>}
                   </div>
             </div>)
   }

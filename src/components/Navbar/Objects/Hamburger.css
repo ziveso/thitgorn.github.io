@@ -4,6 +4,7 @@
   height: 40px;
   margin: auto;
   margin-top: 5vh;
+  cursor: pointer !important;
 }
 
 .line-1{
