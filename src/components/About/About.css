@@ -30,10 +30,32 @@ h5 {
   background-color: grey !important;
 }
 
-/* .skill {
-  padding-top: 10px;
-  margin: 10px 10px 10px 10px;
-  background:  #b7f9f7;
-  border: 2px solid #7cece8;
-  border-radius: 5px;
-} */
+.next{
+  position: fixed;
+  bottom: 10px;
+}
+
+.back{
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+}
+
+@media (max-width:768px) {
+  .hideOnMobile{
+    display: none;
+  }
+}
+@media (min-width:768px) {
+  .showOnMobile{
+    display: none;
+  }
+}
+
+.animate {
+  animation: animate 1s;
+}
+
+@keyframes animate {
+  from { margin-left: 100vh}
+}

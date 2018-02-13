@@ -14,7 +14,8 @@ class App extends Component {
                      name: "" ,
                      follower: 0,
                      following: 0,
-                     img: ""}
+                     img: "",
+                     public_repos: ""}
     this.getAbout = this.getAbout.bind(this)
   }
 
@@ -26,7 +27,8 @@ class App extends Component {
                        name: data.name ,
                        follower: data.followers ,
                        following: data.following ,
-                       img: data.avatar_url} )
+                       img: data.avatar_url ,
+                       public_repos: data.public_repos} )
     }).catch()
   }
 

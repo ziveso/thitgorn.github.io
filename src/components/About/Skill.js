@@ -44,7 +44,7 @@ class Skill extends React.Component {
   getSkills() {
     return skills.map((item,i) => {
         var percent = item.percent;
-        return (<div className="progress" style={{width: `${percent}%`}}>
+        return (<div key={i} className="progress" style={{width: `${percent}%`}}>
                   <div className={`progress-bar control bg-grey`} role="progressbar" style={{width: `100%`}}>{item.text} - {item.percent} %</div>
                 </div>)
     })
@@ -54,7 +54,7 @@ class Skill extends React.Component {
     return (<div>
               <div className="skill-wrapper">
                 <div onClick={ () => {this.handleClick()}} className="toggler">SKILLS</div>
-                <div align="right" className="skill-progress">{this.getSkills()}</div>}
+                <div align="right" className="skill-progress">{this.getSkills()}</div>
               </div>
             </div>)
   }
