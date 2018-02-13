@@ -7,9 +7,9 @@ const description = "1st Place Local Hackday host by Github and Major Hack leagu
 const repo = "https://github.com/thitgorn/TouchYou_Hackaton"
 class Award extends React.Component {
   render() {
-    return (<div style={{margin:"50px 0 0 0"}}>
+    return (<div style={{width:`100%` , height:`100vh`}}>
                 <h1>ACHIEVEMENT</h1>
-                <div className="row">
+                <div className="row container">
                   <div className="col-md-4">
                     <Card img={localhackday} title={title} description={description} repo={repo} />
                   </div>

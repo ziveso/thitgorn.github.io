@@ -13,7 +13,9 @@ const courses = ["Object-Oriented Programming I",
                 "Software Specification & Design",
                 "Software Specification & Design Lab"]
 var wrapper = {
-  margin:"20px 10px 10px 10px"
+  width: `100%`,
+  height: `100vh`,
+  background: "rgba(100,100,100,0.6)"
 }
 
 class RelatedCouse extends React.Component {
@@ -27,7 +29,7 @@ class RelatedCouse extends React.Component {
               <h1>Related courses</h1>
               <h5>(Software and knowledge engineering)</h5>
               <br/>
-              <div className="row">
+              <div className="row container">
                 {this.getCourse()}
               </div>
             </div>)

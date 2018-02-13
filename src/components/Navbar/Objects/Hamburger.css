@@ -24,3 +24,10 @@
   margin-right: 5px;
   margin-left: 5px;
 }
+
+@media (max-width:768px) {
+  .btn-menu{
+    margin: auto;
+    margin-top: 2vh;
+  }
+}

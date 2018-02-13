@@ -6,6 +6,12 @@ h5 {
   font-family: monospace;
 }
 
+.about-fullscreen{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(50,123,75,0.3);
+}
+
 .Paragraph {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   padding: 10px 10px 10px 10px;

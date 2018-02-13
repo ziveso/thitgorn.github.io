@@ -14,3 +14,9 @@
   flex-direction: column;
   width: 100%;
 }
+
+@media (max-width:768px) {
+  .line-item{
+    border: 0px solid white;
+  }
+}
