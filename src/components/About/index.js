@@ -31,7 +31,7 @@ class index extends React.Component {
 
   render() {
     var data = this.props.data.data
-    const Elements = [ <Github data={data}/>, <Me img={data.img}/> , <Introduce/> ]
+    const Elements = [ <Me img={data.img}/> , <Introduce/>,<Github data={data}/> ]
 
     return (<div className="about-fullscreen">
                 <div className="showOnMobile">
