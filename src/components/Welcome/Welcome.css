@@ -1,45 +1,10 @@
 .welcome {
   height: 100vh;
-  display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center;
-  color: white;
-  animation: colorchange 50s infinite;
-  -webkit-animation: colorchange 50s infinite; /* Chrome and Safari */
 }
 
-@keyframes colorchange
-{
-  0%   {background: rgb(64, 64, 64);}
-  25%  {background: rgb(80, 48, 48);}
-  50%  {background: rgb(96, 32, 32);}
-  75%  {background: rgb(112, 16, 16);}
-  100% {background: rgb(128, 0, 0);}
-}
-
-@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-{
-  0%   {background: rgb(64, 64, 64);}
-  25%  {background: rgb(80, 48, 48);}
-  50%  {background: rgb(96, 32, 32);}
-  75%  {background: rgb(112, 16, 16);}
-  100% {background: rgb(128, 0, 0);}
-}
-
-@media (max-width: 768px) {
-  .header {
-    text-align: center;
-  }
-}
-
-.abc {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-left:-20px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
+textarea {
+    resize: none;
+    border: none;
 }
 
 .arrow {
