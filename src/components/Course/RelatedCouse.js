@@ -1,4 +1,5 @@
 import React from 'react'
+import './RelatedCourse.css'
 
 const courses = ["Object-Oriented Programming I",
                 "Object-Oriented Programming II",
@@ -12,11 +13,6 @@ const courses = ["Object-Oriented Programming I",
                 "Computer System Laboratory",
                 "Software Specification & Design",
                 "Software Specification & Design Lab"]
-var wrapper = {
-  width: `100%`,
-  height: `100vh`,
-  background: "rgba(100,100,100,0.6)"
-}
 
 class RelatedCouse extends React.Component {
   getCourse() {
@@ -25,7 +21,7 @@ class RelatedCouse extends React.Component {
     })
   }
   render() {
-    return (<div style={wrapper}>
+    return (<div className="RelatedCourse">
               <h1>Related courses</h1>
               <h5>(Software and knowledge engineering)</h5>
               <br/>

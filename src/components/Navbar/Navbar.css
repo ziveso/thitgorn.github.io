@@ -15,8 +15,15 @@
   width: 60px;
   height: 100vh;
   background-color: black;
+  z-index: 999;
+  animation: slideLeft 0.5s;
 }
 
+@keyframes slideLeft {
+  from { width:300px;
+         left:0; }
+  to { width: 60px }
+}
 
 @media (max-width:768px) {
   .nav{
@@ -45,8 +52,4 @@
 
 .development {
   border: 1px solid red;
-}
-
-@media (max-width:768px) {
-
 }

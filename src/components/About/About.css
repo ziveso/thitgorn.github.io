@@ -36,57 +36,10 @@ h5 {
   }
 }
 
-.skill {
+/* .skill {
   padding-top: 10px;
   margin: 10px 10px 10px 10px;
   background:  #b7f9f7;
   border: 2px solid #7cece8;
   border-radius: 5px;
-}
-
-.control {
-  text-align: left;
-  padding-left: 20px;
-  color: black;
-  text-shadow:
-   -1px -1px 0 #FFFFFF,
-    1px -1px 0 #FFFFFF,
-    -1px 1px 0 #FFFFFF,
-     1px 1px 0 #FFFFFF;
-}
-
-.bg-red {
-  background-color: red !important;
-}
-
-.bg-red:hover {
-  background-color: black !important;
-  font-size: 17px;
-}
-
-.bg-orange {
-  background-color: orange !important;
-}
-
-.bg-orange:hover {
-  background-color: black !important;
-  font-size: 17px;
-}
-
-.bg-blue {
-  background-color: blue !important;
-}
-
-.bg-blue:hover {
-  background-color: black !important;
-  font-size: 17px;
-}
-
-.bg-green {
-  background-color: green !important;
-}
-
-.bg-green:hover {
-  background-color: black !important;
-  font-size: 17px;
-}
+} */

@@ -1,5 +1,7 @@
 .welcome {
   height: 100vh;
+  position: relative;
+  z-index: 800;
 }
 
 textarea {

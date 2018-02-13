@@ -1,22 +1,23 @@
-.app {
-  width: 100%;
-  font-family: Monospace;
-}
-
-.layout {
-  /* border: 1px solid black; */
-  /* background-color: cyan; */
+.profile{
+  padding-top: 10vh;
+  height: 80vh;
 }
 
 .img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 50%;
 }
 
-
-@media (max-width:480px) {
-  .app {
-    width: 100%;
+@media (max-width:768px) {
+  .profile{
+    padding-top: 15vh;
+    height: 80vh;
+  }
+  .img {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
   }
 }

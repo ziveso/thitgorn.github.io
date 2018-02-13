@@ -18,7 +18,6 @@ class Navbar extends React.Component {
 
   show(){
     this.setState({visible:true})
-    console.log("show");
   }
 
   hide(){
@@ -27,23 +26,21 @@ class Navbar extends React.Component {
 
   getItem() {
     return element.map((item,i) => {
-      return <Item name={item} key={i} visible={this.state.visible}/>
+      return <Item name={item} key={i} visible={this.state.false}/>
     })
   }
 
   render() {
     return (<div>
-                <div className="nav">
+                {!this.state.visible && <div className="nav">
                   <div>
                     <Hamburger toggle={this.show}/>
                     {this.getItem()}
                   </div>
-                </div>
+                </div>}
                 {this.state.visible && <FullMenu toggle={this.hide}/>}
             </div>
             )
   }
 }
-
-
 export default Navbar

@@ -1,0 +1,47 @@
+.skill-wrapper{
+  position: fixed;
+  top: 0;
+  right: -2%;
+  display: flex;
+  width: 70%;
+  z-index: 500;
+  right: -60%;
+  transition: 1s;
+}
+
+.skill-wrapper:hover {
+  cursor: pointer;
+  transition: 1s;
+  right: 0%;
+}
+
+.toggler {
+  margin-top: 45vh;
+  height: 20px;
+  transform: rotate(-90deg);
+}
+
+.skill-progress {
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.bg-none {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.bg-grey {
+  background-color: grey !important;
+}
+
+.control {
+  text-align: right;
+  padding-right: 20px;
+  color: rgb(255,215,0);
+  /* text-shadow:
+   -1px 0px 0 #FFFFFF,
+    1px 0px 0 #FFFFFF,
+    0px 1px 0 #FFFFFF,
+     1px 0px 0 #FFFFFF; */
+  width: 100%;
+}

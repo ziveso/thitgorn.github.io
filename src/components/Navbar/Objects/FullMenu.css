@@ -5,6 +5,13 @@
   width: 300px;
   height: 100vh;
   background-color: black;
+  z-index: 999;
+  animation: slideRight 1s;
+}
+
+@keyframes slideRight {
+  from {left:-240px}
+  to {left:0}
 }
 
 .nav-center {

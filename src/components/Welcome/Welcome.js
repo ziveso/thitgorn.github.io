@@ -79,7 +79,7 @@ class Welcome extends React.Component {
                     break;
       case "clear":
                     this.setState({value: USERNAME})
-                    break;
+                    return;
       case "about":
                     output = Command.about;
                     break;

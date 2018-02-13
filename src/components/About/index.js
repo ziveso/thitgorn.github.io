@@ -1,20 +1,17 @@
 import React from 'react'
-import Profile from './Profile'
-import About from './About'
+import Me from './Me'
+import './About.css'
+import Skill from './Skill'
 
 class index extends React.Component {
+  constructor(props) {
+    super(props)
+    console.log(props.data.data);
+  }
   render() {
     return (<div className="about-fullscreen">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-4">
-                    <Profile data={this.props.data}/>
-                  </div>
-                  <div className="col-md-8">
-                    <About />
-                  </div>
-                </div>
-              </div>
+                <Me img={this.props.data.data.img}/>
+                <Skill/>
             </div>)
   }
 }
