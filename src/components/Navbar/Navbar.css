@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .nav {
@@ -14,7 +14,7 @@
   width: 60px;
   height: 100vh;
   background-color: black;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 @media (min-width:768px) {

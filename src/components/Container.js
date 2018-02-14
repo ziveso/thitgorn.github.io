@@ -29,10 +29,6 @@ class Container extends React.Component {
                 <About data={this.state.p}/>
               </Element>
 
-              <Element name="COURSE">
-                <RelatedCouse/>
-              </Element>
-
               <Element name="ACHIEVEMENT">
                 <Award/>
               </Element>

@@ -8,13 +8,16 @@ import MazeCreater from './MazeCreater'
 import MazeRunner from './MazeRunner'
 import TillingBlock from './TillingBlock'
 import XOai from './XOai'
+import './central.css'
 
 class Project extends React.Component {
   render() {
-    return (<div style={{width:`100%` , height:`100vh`}}>
-              <h1>WORK EXPERIENCE</h1>
-              <h5>(Click picture for more detail)</h5>
-              <div className="row container">
+    return (<div style={{width:`100%`}} className="onTop">
+              <div align="center">
+                <h1>WORK EXPERIENCE</h1>
+                <h5>(Click picture for more detail)</h5>
+              </div>
+              <div className="row" style={{width:`100%`}}>
                 <div className="col-sm-6 col-md-3">
                   <Barcamp/>
                 </div>

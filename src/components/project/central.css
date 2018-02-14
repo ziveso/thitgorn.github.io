@@ -1,4 +1,11 @@
 .showcase {
   width: 80%;
   margin: auto;
+  position: relative;
+}
+
+.onTop {
+  position: relative;
+  /* z-index: 500; */
+  background-color: white;
 }

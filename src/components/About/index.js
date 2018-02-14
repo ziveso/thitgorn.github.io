@@ -36,8 +36,8 @@ class index extends React.Component {
                     { (this.state.i===0) && <div className="animate"><Me img={data.img}/></div>}
                     { (this.state.i===1) && <div className="animate"><Introduce/></div>}
                     { (this.state.i===2) && <div className="animate"><Github data={data}/></div>}
-                    <div className="back" onClick={()=>{this.handleBack()}}>BACK</div>
-                    <div className="next" onClick={()=>{this.handleNext()}}>NEXT</div>
+                    <div className="next arrow" onClick={()=>{this.handleNext()}}></div>
+                    <div className="back arrow" onClick={()=>{this.handleBack()}}></div>
                 </div>
                 <div className="hideOnMobile">
                   <div className='row' style={{width:`100%` , margin:'auto'}}>

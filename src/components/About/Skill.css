@@ -1,11 +1,10 @@
 .skill-wrapper{
   position: fixed;
   top: 0;
-  right: -2%;
   display: flex;
   width: 70%;
-  z-index: 500;
-  right: -60%;
+  /* z-index: 500; */
+  right: -55%;
   transition: 1s;
 }
 
@@ -24,8 +23,14 @@
 
 .toggler {
   margin-top: 45vh;
-  height: 20px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
   transform: rotate(-90deg);
+  color: rgba(199,49,199,0.9);
+  border: 1px solid rgba(123,123,123,0.8);
+  border-radius: 10px;
+  background-color: rgba(10,10,10,0.2);
 }
 
 .skill-progress {

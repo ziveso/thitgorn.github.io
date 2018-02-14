@@ -3,11 +3,11 @@
   width: 90%;
   height: auto;
   background: black;
-
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+  z-index: 999 !important;
 }
 
 .Spinner {
@@ -19,6 +19,7 @@
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+  z-index: 999 !important;
 }
 
 .Spinnerbg{
@@ -28,6 +29,7 @@
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 995 !important;
 }
 
 .fullscreen {
@@ -38,4 +40,5 @@
   left: 0;
   background: grey;
   margin: auto;
+  z-index: 995 !important;
 }

@@ -5,8 +5,10 @@ const cmd = {
 see command run cmd\n=============\n`,
   "clear" : "clear",
   "next" : "next",
-  "about" : `   Hi! I'm Guy! currently studying Software and Knowledge Engineering at Kasetsart University. Eager to learn new things with newest tools. Adaptive and Collaborate Person. Familiar with version control system, design patterns and UNIX command.
-            "I'm Also looking for any internship program."`,
+  "about" : `
+     Hi! I'm Guy! currently studying Software and Knowledge Engineering at Kasetsart University. Eager to learn new things with newest tools. Adaptive and Collaborate Person. Familiar with version control system, design patterns and UNIX command.
+            "I'm Also looking for any internship program."
+            `,
   "experience" :
   `
   BCBK 8 - Barcamp Bangkhen 8 website. Tools - React
