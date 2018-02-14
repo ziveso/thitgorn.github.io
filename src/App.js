@@ -41,7 +41,6 @@ class App extends Component {
   getAbout() {
     if(this.state.isMount) {
       if(this.state.username==="") {
-        // do loading here
         return (<div>LOADING</div>)
       } else
       return <Container data={this.state}/>

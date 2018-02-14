@@ -4,6 +4,11 @@
 
 .navSpace {
   margin-left: 60px;
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity:0.7 }
 }
 
 @media (max-width:768px) {
