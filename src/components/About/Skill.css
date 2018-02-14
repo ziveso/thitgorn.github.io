@@ -9,7 +9,7 @@
   transition: 1s;
 }
 
-.skill-wrapper:hover {
+.skill-wrapper:hover , .skill-wrapper:active {
   cursor: pointer;
   transition: 1s;
   right: 0%;

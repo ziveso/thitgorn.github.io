@@ -7,7 +7,7 @@ const USERNAME = "user $:"
 const Greeting = "login as unknown user\n\ncat README.txt\n"
 const README =
 `Portfolio website\nThitiwat Thongbor - SOFTWARE DEVELOPER\n\n
-see command run cmd\n=============\n`
+see command run help\n=============\n`
 
 class Welcome extends React.Component {
   constructor(props) {
@@ -95,8 +95,8 @@ class Welcome extends React.Component {
       case "ls":
                     output = Command.ls;
                     break;
-      case "cmd":
-                    output = Command.cmd;
+      case "help":
+                    output = Command.help;
                     break;
       case "cat README.txt":
                     output = Command.README;

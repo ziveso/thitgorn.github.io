@@ -31,16 +31,16 @@ class index extends React.Component {
 
   render() {
     var data = this.props.data.data
-    const Elements = [ <Me img={data.img}/> , <Introduce/>,<Github data={data}/> ]
-
     return (<div className="about-fullscreen">
                 <div className="showOnMobile">
-                    <div className="animate">{Elements[this.state.i]}</div>
+                    { (this.state.i===0) && <div className="animate"><Me img={data.img}/></div>}
+                    { (this.state.i===1) && <div className="animate"><Introduce/></div>}
+                    { (this.state.i===2) && <div className="animate"><Github data={data}/></div>}
                     <div className="back" onClick={()=>{this.handleBack()}}>BACK</div>
                     <div className="next" onClick={()=>{this.handleNext()}}>NEXT</div>
                 </div>
                 <div className="hideOnMobile">
-                  <div className='row'>
+                  <div className='row' style={{width:`100%` , margin:'auto'}}>
                     <div className='col-sm-12 col-md-4'>
                       <Me img={data.img}/>
                     </div>

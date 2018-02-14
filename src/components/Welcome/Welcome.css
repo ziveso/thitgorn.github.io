@@ -9,6 +9,10 @@ textarea {
     border: none;
 }
 
+.abc {
+  cursor: pointer;
+}
+
 .arrow {
   position: absolute;
   bottom: 10px;

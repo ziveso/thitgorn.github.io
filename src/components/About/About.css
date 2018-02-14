@@ -46,7 +46,7 @@ h5 {
     display: none;
   }
 }
-@media (min-width:768px) {
+@media (min-width:769px) {
   .showOnMobile{
     display: none;
   }
@@ -57,5 +57,5 @@ h5 {
 }
 
 @keyframes animate {
-  from { margin-left: 100vh}
+  from { transform:translateX(100%) }
 }

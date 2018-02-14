@@ -21,7 +21,7 @@ see command run cmd\n=============\n`,
   `,
   "award" : "First Place localhackday hackathon hosted by github,MHL- 2016",
   "contact" : "\nThitiwat Thongbor\nEmail: thitiwat.tho1@ku.th\nTell: 0837700808\n",
-  "cmd" :
+  "help" :
 ` - ls
  - clear
  - next - go to next Element

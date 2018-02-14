@@ -14,7 +14,7 @@ class Github extends React.Component {
   }
 
   power(number) {
-    return Math.pow(10,parseInt(number),10)
+    return Math.pow(10,parseInt(number,10),10)
   }
 
   getW(number) {

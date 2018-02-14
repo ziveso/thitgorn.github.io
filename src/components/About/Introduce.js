@@ -14,7 +14,7 @@ var content = {
 
 class Introduce extends React.Component {
   render(){
-    return (<div className="Introduce">
+    return (<div className="Introduce container">
               {content.content}
             </div>)
   }
