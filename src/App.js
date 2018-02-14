@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Container from './components/Container'
-import Loading from './components/Loading'
+import LoadPage from './components/Loadpageeffect/index'
 
 import Axios from 'axios'
 
@@ -15,8 +15,10 @@ class App extends Component {
                      follower: 0,
                      following: 0,
                      img: "",
-                     public_repos: ""}
+                     public_repos: "",
+                     isMount:false}
     this.getAbout = this.getAbout.bind(this)
+    this.setIsMount = this.setIsMount.bind(this)
   }
 
   componentDidMount() {
@@ -32,12 +34,20 @@ class App extends Component {
     }).catch()
   }
 
+  setIsMount() {
+    
+  }
+
   getAbout() {
-    if(this.state.username==="") {
-      // do loading here
-      return <Loading/>
-    } else
-    return <Container data={this.state}/>
+    if(this.state.isMount) {
+      if(this.state.username==="") {
+        // do loading here
+        return (<div>LOADING</div>)
+      } else
+      return <Container data={this.state}/>
+    } else {
+      return <LoadPage isMount={this.setIsMount}/>
+    }
   }
 
   render() {
@@ -45,8 +55,8 @@ class App extends Component {
       <div>
         <div>{this.getAbout()}</div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
