@@ -4,7 +4,7 @@ import FullMenu from './Objects/FullMenu'
 import Item from './Objects/Item'
 import './Navbar.css'
 
-const element = ['WELCOME' , 'ABOUT' , 'COURSE' , 'ACHIEVEMENT' , 'EXPERIENCE']
+const element = ['WELCOME' , 'ABOUT' , 'ACHIEVEMENT' , 'EXPERIENCE' ,'CONTACT']
 
 class Navbar extends React.Component {
   constructor() {
@@ -38,7 +38,7 @@ class Navbar extends React.Component {
                     {this.getItem()}
                   </div>
                 </div>}
-                {this.state.visible && <FullMenu toggle={this.hide}/>}
+                {this.state.visible && <FullMenu toggle={this.hide} element={element}/>}
             </div>
             )
   }
