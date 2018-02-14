@@ -34,8 +34,8 @@ class App extends Component {
     }).catch()
   }
 
-  setIsMount() {
-    
+  setIsMount(bool) {
+    this.setState({isMount:bool})
   }
 
   getAbout() {
