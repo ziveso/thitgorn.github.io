@@ -4,8 +4,17 @@ class Contact extends React.Component {
   render() {
     return (<div>
               <h1>CONTACT</h1>
+              tell num
+              mail
+              github
+              address
             </div>)
   }
 }
 
-export default Contact
+class Notuse extends React.Component {
+  render() {
+    return (<div></div>)
+  }
+}
+export default Notuse

@@ -4,6 +4,7 @@ import './About.css'
 import Skill from './Skill'
 import Introduce from './Introduce'
 import Github from './Github'
+import SkillMobile from './SkillMobile'
 
 class index extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class index extends React.Component {
 
   handleNext(){
     var next = this.state.i+1;
-    if(next>2){
+    if(next>3){
       next = 0;
     }
     this.setState({ i : next})
@@ -24,7 +25,7 @@ class index extends React.Component {
   handleBack(){
     var next = this.state.i-1;
     if(next<0){
-      next = 2;
+      next = 3;
     }
     this.setState({ i : next})
   }
@@ -36,8 +37,7 @@ class index extends React.Component {
                     { (this.state.i===0) && <div className="animate"><Me img={data.img}/></div>}
                     { (this.state.i===1) && <div className="animate"><Introduce/></div>}
                     { (this.state.i===2) && <div className="animate"><Github data={data}/></div>}
-                    <div className="next arrow" onClick={()=>{this.handleNext()}}></div>
-                    <div className="back arrow" onClick={()=>{this.handleBack()}}></div>
+                    { (this.state.i===3) && <div className="animate"><SkillMobile/></div>}
                 </div>
                 <div className="hideOnMobile">
                   <div className='row' style={{width:`100%` , margin:'auto'}}>
@@ -51,8 +51,14 @@ class index extends React.Component {
                       <Github data={data}/>
                     </div>
                   </div>
+                  <Skill/>
                 </div>
-              <Skill/>
+                <div className="showOnMobile">
+                  <div style={{display:`flex`,margin:`2vh 0 0 0`}}>
+                    <div className="next arrow" onClick={()=>{this.handleNext()}}></div>
+                    <div className="back arrow" onClick={()=>{this.handleBack()}}></div>
+                  </div>
+                </div>
           </div>)
   }
 }

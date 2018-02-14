@@ -6,6 +6,14 @@
 }
 
 .github-img {
-  width: 50%;
-  height: auto;
+  height: 20vh;
+  width: auto;
+}
+
+.progress-bar-github{
+  animation: progress-run 2s;
+}
+
+@keyframes progress-run {
+  from{width:0}
 }

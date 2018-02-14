@@ -31,20 +31,17 @@ h5 {
 }
 
 .next{
-  position: fixed;
-  bottom: 10px;
+  position: relative;
   transform: rotate(-90deg);
-  top: 90vh;
-  left: 90%;
   cursor: pointer;
+  left: 70%;
 }
 
 .back{
-  position: fixed;
-  bottom: 10px;
+  position: relative;
   transform: rotate(90deg);
-  top: 90vh;
-  left: 10%;
+  cursor: pointer;
+  left: 30%;
 }
 
 @media (max-width:768px) {

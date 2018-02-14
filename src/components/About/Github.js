@@ -31,19 +31,19 @@ class Github extends React.Component {
                 Following
               </div>
               <div className="progress">
-                <div className="progress-bar" style={{width: `${this.getW(this.props.data.following)}%`}}>{this.props.data.following}/{this.power(this.findDigit(this.props.data.following))}</div>
+                <div className="progress-bar progress-bar-github" style={{width: `${this.getW(this.props.data.following)}%`}}>{this.props.data.following}/{this.power(this.findDigit(this.props.data.following))}</div>
               </div>
               <div align="left">
                 Follower
               </div>
               <div className="progress">
-                <div className="progress-bar" style={{width: `${this.getW(this.props.data.follower)}%`}}>{this.props.data.follower}/{this.power(this.findDigit(this.props.data.follower))}</div>
+                <div className="progress-bar progress-bar-github" style={{width: `${this.getW(this.props.data.follower)}%`}}>{this.props.data.follower}/{this.power(this.findDigit(this.props.data.follower))}</div>
               </div>
               <div align="left">
                 Public repos
               </div>
               <div className="progress">
-                <div className="progress-bar" style={{width: `${this.getW(this.props.data.public_repos)}%`}}>{this.props.data.public_repos}/{this.power(this.findDigit(this.props.data.public_repos))}</div>
+                <div className="progress-bar progress-bar-github" style={{width: `${this.getW(this.props.data.public_repos)}%`}}>{this.props.data.public_repos}/{this.power(this.findDigit(this.props.data.public_repos))}</div>
               </div>
             </div>)
   }
