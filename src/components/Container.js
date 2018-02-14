@@ -3,8 +3,7 @@ import Welcome from './Welcome/Welcome'
 import About from './About/index'
 import Award from './Award/Award'
 import Project from './Project/Project'
-import RelatedCouse from './Course/RelatedCouse'
-
+import Contact from './Contact/Contact'
 import Navbar from './Navbar/Navbar'
 
 import './Container.css'
@@ -37,6 +36,9 @@ class Container extends React.Component {
                 <Project/>
               </Element>
 
+              <Element name="CONTACT">
+                <Contact/>
+              </Element>
               <Navbar/>
             </div>)
   }

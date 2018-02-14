@@ -6,13 +6,13 @@
   height: 100vh;
   background-color: black;
   z-index: 950;
-  animation: slideRight 1s;
+  animation: slideRight 0.5s;
 }
 
 @media (max-width:768px) {
   .nav-full {
     width: 100%;
-    animation: slideLeftMobile 1s;
+    animation: slideLeftMobile 0.5s;
   }
 }
 
