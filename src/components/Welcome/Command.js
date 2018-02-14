@@ -21,7 +21,7 @@ see command run cmd\n=============\n`,
   Till L Block - Tilling L Block to the 2^n grid. Tools - JAVA
   XO bot - Unwinable bot XO at 3x3. Tools - JAVA
   `,
-  "award" : "First Place localhackday hackathon hosted by github,MHL- 2016",
+  "award" : "\nFirst Place localhackday hackathon hosted by github,MHL- 2016\n",
   "contact" : "\nThitiwat Thongbor\nEmail: thitiwat.tho1@ku.th\nTell: 0837700808\n",
   "help" :
 ` - ls
