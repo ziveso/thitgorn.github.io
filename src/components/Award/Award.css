@@ -1,5 +1,4 @@
 .Award {
   position: relative;
-  /* z-index: 501; */
-  background-color: white;
+  background-color: white !important;
 }

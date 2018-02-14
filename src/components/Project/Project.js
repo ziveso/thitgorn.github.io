@@ -12,7 +12,7 @@ import './central.css'
 
 class Project extends React.Component {
   render() {
-    return (<div style={{width:`100%`, margin:`4vh 0 0 0`}} className="onTop">
+    return (<div style={{width:`100%`, padding:`4vh 0 0 0`}} className="onTop">
               <div align="center">
                 <h1>WORK EXPERIENCE</h1>
                 <h5>(Click picture for more detail)</h5>
