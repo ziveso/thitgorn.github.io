@@ -33,7 +33,7 @@ class SkillMobile extends React.Component {
 
   getSkills() {
     return skills.map((item,i) => {
-        var percent = item.percent;
+        var percent = item.percent
         return (<div key={i} className="progress progress-bar-github" style={{width: `${percent}%`}}>
                   <div className={`progress-bar`} role="progressbar" style={{width: `100%`}}>{item.text} - {item.percent} %</div>
                 </div>)

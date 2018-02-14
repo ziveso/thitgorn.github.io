@@ -8,6 +8,7 @@ class Me extends React.Component {
                   <img src={this.props.img} className='img' alt='profileimage' />
                   <h1>Thitiwat Thongbor</h1>
                   <h5>Software Developer</h5>
+                  <h4>Kasetsart University</h4>
             </div>)
   }
 }

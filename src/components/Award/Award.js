@@ -8,7 +8,7 @@ const description = "1st Place Local Hackday host by Github and Major Hack leagu
 const repo = "https://github.com/thitgorn/TouchYou_Hackaton"
 class Award extends React.Component {
   render() {
-    return (<div style={{width:`100%`}} className="Award">
+    return (<div style={{width:`100%` ,margin:`2vh 0 0 0`}} className="Award">
                 <h1 align="center">ACHIEVEMENT</h1>
                 <div className="row" style={{width:`100%`}}>
                   <div className="col-md-4">

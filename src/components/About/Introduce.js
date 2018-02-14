@@ -5,9 +5,9 @@ var content = {
   header: 'Thitiwat Thongbor',
   content: (
     <h5>
-      &emsp;Hi! I'm Guy! currently studying Software and Knowledge Engineering at Kasetsart University.
-      <br/>Eager to learn new things with newest tools. <br/>Adaptive and Collaborate Person. <br/>Familiar with version control system, design patterns and UNIX command. <br/>
-      <b>"I'm Also looking for any internship program."</b>
+      &emsp;Hi! I'm Guy!<br/>Software and Knowledge Engineering Student.<br/>I'm eager to learn new things with newest tools.
+      Adaptive and Collaborate Person. Familiar with version control system, design patterns and UNIX command.
+      <br/><br/><b>"I'm Also looking for any internship program."</b>
     </h5>
   )
 }
