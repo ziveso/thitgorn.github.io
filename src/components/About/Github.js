@@ -2,15 +2,11 @@ import React from 'react'
 import './Github.css'
 
 class Github extends React.Component {
-  componentDidMount(){
-    console.log(this.props.data);
-  }
-
   findDigit(number) {
     number = parseInt(number , 10)
     if(number/10===0)
-      return 0;
-    return this.findDigit(number/10) + 1;
+      return 0
+    return this.findDigit(number/10) + 1
   }
 
   power(number) {
@@ -49,4 +45,4 @@ class Github extends React.Component {
   }
 }
 
-export default Github;
+export default Github

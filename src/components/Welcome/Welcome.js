@@ -11,11 +11,11 @@ see command run help\n=============\n`
 
 class Welcome extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {value: Greeting + README + USERNAME};
+    super(props)
+    this.state = {value: Greeting + README + USERNAME}
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleCommand = this.handleCommand.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.handleCommand = this.handleCommand.bind(this)
   }
 
 
@@ -31,7 +31,7 @@ class Welcome extends React.Component {
     var oldString = this.state.value
     if(!this.checkPositionType(event)) {
       this.setState({value:oldString})
-      return;
+      return
     }
     if (event.target.value.substring(event.target.value.length-6 , event.target.value.length)==='user $')
       event.target.value=event.target.value+":"
@@ -46,12 +46,12 @@ class Welcome extends React.Component {
     var newString = event.target.value
     var oldString = this.state.value
     if(newString.slice(0,-1)===oldString) {
-      return true;
+      return true
     }
     if(newString===oldString.slice(0,-1)) {
-      return true;
+      return true
     }
-    return false;
+    return false
   }
   getCommand() {
     var s = this.state.value.split(USERNAME)
@@ -59,49 +59,48 @@ class Welcome extends React.Component {
     a = a.trim()
     if(a==="")
       return "Enter"
-    console.log(a);
     return a
   }
 
   handleCommand(cmd,event) {
     var output = ""
-    console.log(cmd);
+    cmd = cmd.toLowerCase()
     switch(cmd) {
       case "enter":
                     this.setState({value: event.target.value + USERNAME})
-                    break;
+                    return cmd
       case "next":
-                    output = Command.next;
-                    this.scroll();
-                    break;
+                    output = Command.next
+                    this.scroll()
+                    break
       case "whoami":
-                    output = Command.whoami;
-                    break;
+                    output = Command.whoami
+                    break
       case "clear":
                     this.setState({value: USERNAME})
-                    return;
+                    return
       case "about":
-                    output = Command.about;
-                    break;
+                    output = Command.about
+                    break
       case "experience":
-                    output = Command.experience;
-                    break;
+                    output = Command.experience
+                    break
       case "award":
-                    output = Command.award;
-                    break;
+                    output = Command.award
+                    break
       case "contact":
-                    output = Command.contact;
-                    break;
+                    output = Command.contact
+                    break
       case "ls":
-                    output = Command.ls;
-                    break;
+                    output = Command.ls
+                    break
       case "help":
-                    output = Command.help;
-                    break;
-      case "cat README.txt":
-                    output = Command.README;
-                    break;
-      default: output = "command not found: " + cmd;
+                    output = Command.help
+                    break
+      case "cat readme.txt":
+                    output = Command.README
+                    break
+      default: output = "command not found: " + cmd
     }
     this.setState({value: event.target.value + output + "\n" + USERNAME})
     return output

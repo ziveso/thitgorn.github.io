@@ -13,4 +13,4 @@ class SkeChayen extends React.Component {
   }
 }
 
-export default SkeChayen;
+export default SkeChayen

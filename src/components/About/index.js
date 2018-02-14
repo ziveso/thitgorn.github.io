@@ -15,17 +15,17 @@ class index extends React.Component {
   }
 
   handleNext(){
-    var next = this.state.i+1;
+    var next = this.state.i+1
     if(next>3){
-      next = 0;
+      next = 0
     }
     this.setState({ i : next})
   }
 
   handleBack(){
-    var next = this.state.i-1;
+    var next = this.state.i-1
     if(next<0){
-      next = 3;
+      next = 3
     }
     this.setState({ i : next})
   }

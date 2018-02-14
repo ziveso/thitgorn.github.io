@@ -43,7 +43,7 @@ class Skill extends React.Component {
 
   getSkills() {
     return skills.map((item,i) => {
-        var percent = item.percent;
+        var percent = item.percent 
         return (<div key={i} className="progress" style={{width: `${percent}%`}}>
                   <div className={`progress-bar control bg-grey`} role="progressbar" style={{width: `100%`}}>{item.text} - {item.percent} %</div>
                 </div>)

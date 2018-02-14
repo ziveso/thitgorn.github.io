@@ -1,6 +1,6 @@
 import React from 'react'
 import './Popup.css'
-import ImageLoader from 'react-load-image';
+import ImageLoader from 'react-load-image'
 import Preloader from '../Preloader'
 
 class Popup extends React.Component {
@@ -28,4 +28,4 @@ class Popup extends React.Component {
   }
 }
 
-export default Popup;
+export default Popup

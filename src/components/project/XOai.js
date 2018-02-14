@@ -6,7 +6,7 @@ import XOGif from '../../images/gif/xo.gif'
 
 const title = "XO bot"
 const description = "Unwinable bot XO at 3x3. Tools - JAVA"
-const repo = "https://github.com/thitgorn/OX_ai";
+const repo = "https://github.com/thitgorn/OX_ai"
 const page = null
 class XOai extends React.Component {
   render() {
@@ -14,4 +14,4 @@ class XOai extends React.Component {
   }
 }
 
-export default XOai;
+export default XOai

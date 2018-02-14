@@ -13,4 +13,4 @@ class Remec extends React.Component {
   }
 }
 
-export default Remec;
+export default Remec

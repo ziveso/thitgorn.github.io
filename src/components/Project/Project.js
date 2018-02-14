@@ -46,8 +46,8 @@ class Project extends React.Component {
                   <XOai/>
                 </div>
               </div>
-            </div>);
+            </div>)
   }
 }
 
-export default Project;
+export default Project

@@ -13,4 +13,4 @@ class DisasterBox extends React.Component {
   }
 }
 
-export default DisasterBox;
+export default DisasterBox

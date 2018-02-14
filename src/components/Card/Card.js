@@ -37,11 +37,11 @@ class Card extends React.Component {
   }
 
   show() {
-      this.setState({ visible: true });
+      this.setState({ visible: true }) 
   }
 
   hide() {
-      this.setState({ visible: false });
+      this.setState({ visible: false })
   }
 
   getPopUp() {

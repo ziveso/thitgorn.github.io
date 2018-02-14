@@ -12,4 +12,4 @@ class Smarthouse extends React.Component {
   }
 }
 
-export default Smarthouse;
+export default Smarthouse

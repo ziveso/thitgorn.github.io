@@ -6,7 +6,7 @@ import gifimg from '../../images/gif/block.gif'
 
 const title = "Till L Block"
 const description = "Tilling L Block to the 2^n grid. Tools - JAVA"
-const repo = "https://github.com/thitgorn/BlockTilling";
+const repo = "https://github.com/thitgorn/BlockTilling"
 const page = null
 class TillingBlock extends React.Component {
   render() {
@@ -14,4 +14,4 @@ class TillingBlock extends React.Component {
   }
 }
 
-export default TillingBlock;
+export default TillingBlock

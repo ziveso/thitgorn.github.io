@@ -14,4 +14,4 @@ class MazeRunner extends React.Component {
   }
 }
 
-export default MazeRunner;
+export default MazeRunner

@@ -13,4 +13,4 @@ class MazeCreater extends React.Component {
   }
 }
 
-export default MazeCreater;
+export default MazeCreater

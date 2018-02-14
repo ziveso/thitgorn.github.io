@@ -6,7 +6,7 @@ import Card from '../Card/Card'
 
 const title = "BCBK 8"
 const description = "Barcamp Bangkhen 8 website. Tools - React, Repo is private."
-const repo = null;
+const repo = null
 const page = "http://2017.barcampbangkhen.org"
 class Barcamp extends React.Component {
   render() {
@@ -14,4 +14,4 @@ class Barcamp extends React.Component {
   }
 }
 
-export default Barcamp;
+export default Barcamp

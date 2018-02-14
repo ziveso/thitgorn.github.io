@@ -5,7 +5,6 @@ import { scroller } from 'react-scroll'
 
 class Item extends React.Component {
   handleScroller() {
-    console.log(this.props.name);
     scroller.scrollTo(this.props.name, {
       duration: 1500,
       delay: 100,

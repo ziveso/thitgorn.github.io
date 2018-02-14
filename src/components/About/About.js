@@ -1,8 +1,6 @@
 import React from 'react'
 import './About.css'
 
-
-
 const skills = [ {
   text:"JAVA",
   percent:80
@@ -64,4 +62,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default About 
