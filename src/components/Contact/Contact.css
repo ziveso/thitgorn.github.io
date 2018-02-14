@@ -1,11 +1,11 @@
 .Contact {
-  margin-top: 5vh;
   padding-top: 3%;
   padding-bottom: 3%;
   text-align: center;
   background-color: rgb(46,96,192);
   color: white;
   font-family: monospace;
+  position: relative;
 }
 
 .social {
