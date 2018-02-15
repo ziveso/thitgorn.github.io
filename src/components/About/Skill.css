@@ -58,6 +58,14 @@
   width: 100%;
 }
 
-.progress-bar-mobile{
+@media (max-height:375px) {
+  .skill-progress .progress-bar-github {
+    height: 12px;
+  }
+}
 
+@media (max-height:414px) {
+  .skill-progress .progress-bar-github {
+    height: 15px;
+  }
 }

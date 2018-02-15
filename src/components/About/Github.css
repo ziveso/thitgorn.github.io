@@ -17,3 +17,20 @@
 @keyframes progress-run {
   from{width:0}
 }
+
+@media (max-height:360px) {
+  .Github {
+    padding-top: 0;
+  }
+  .Github h2 {
+    font-size: 15px;
+  }
+
+  .Github h5 {
+    font-size: 12px;
+  }
+
+  .Github .progress {
+    height: 20px !important;
+  }
+}
