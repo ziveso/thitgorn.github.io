@@ -5,6 +5,7 @@ import LoadPage from './components/Loadpageeffect/index'
 import Axios from 'axios'
 
 const URL = 'https://api.github.com/users/thitgorn'
+const CounterURL = 'http://35.197.154.253:3050'
 
 
 class App extends Component {
@@ -32,6 +33,8 @@ class App extends Component {
                        img: data.avatar_url ,
                        public_repos: data.public_repos} )
     }).catch()
+
+    Axios.get(CounterURL).then().catch()
   }
 
   setIsMount(bool) {
