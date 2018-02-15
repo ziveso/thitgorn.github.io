@@ -32,8 +32,9 @@ class Navbar extends React.Component {
 
   render() {
     return (<div>
-                {!this.state.visible && <div className="nav">
-                  <div>
+                {!this.state.visible &&
+                <div className="nav">
+                  <div className="text-center">
                     <Hamburger toggle={this.show}/>
                     {this.getItem()}
                   </div>

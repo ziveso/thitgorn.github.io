@@ -1,9 +1,8 @@
 .line-item {
   width: 80%;
   height: 1;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   margin: auto;
-  cursor: pointer !important;
 }
 
 .item {
@@ -19,4 +18,8 @@
   .line-item{
     border: 0px solid white;
   }
+}
+
+.pointer {
+  cursor: pointer !important;
 }
