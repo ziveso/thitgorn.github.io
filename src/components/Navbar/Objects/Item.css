@@ -14,12 +14,15 @@
   width: 100%;
 }
 
+.pointer {
+  cursor: pointer !important;
+}
+
 @media (max-width:768px) {
   .line-item{
     border: 0px solid white;
   }
-}
-
-.pointer {
-  cursor: pointer !important;
+  .text-mobile {
+    color: var(--menu-bar-mobile);
+  }
 }

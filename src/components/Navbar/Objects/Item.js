@@ -16,7 +16,7 @@ class Item extends React.Component {
   render() {
     return (<div className="item text-center">
                 <div className="line-item">
-                    {this.props.visible && <div className="pointer" onClick={ ()=>{this.handleScroller()}}>{this.props.name}</div>}
+                    {this.props.visible && <div className="pointer text-mobile" onClick={ ()=>{this.handleScroller()}}>{this.props.name}</div>}
                   </div>
             </div>)
   }

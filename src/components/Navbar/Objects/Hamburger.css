@@ -29,5 +29,12 @@
   .btn-menu{
     margin: auto;
     margin-top: 2vh;
+    border: 1px solid var(--menu-bar-mobile);
+  }
+  .line-1 {
+    border-bottom:1px solid var(--menu-bar-mobile);
+  }
+  .line-2 {
+    border-bottom:1px solid var(--menu-bar-mobile);
   }
 }
