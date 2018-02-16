@@ -5,7 +5,7 @@ import LoadPage from './components/Loadpageeffect/index'
 import Axios from 'axios'
 
 const URL = 'https://api.github.com/users/thitgorn'
-const CounterURL = 'https://counter-ziveso.herokuapp.com/'
+const CounterURL = 'http://35.197.154.253:5000/'
 
 
 class App extends Component {
