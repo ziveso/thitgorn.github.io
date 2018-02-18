@@ -1,8 +1,13 @@
 import React from 'react'
 import './index.css'
 import TypeWriter from 'react-typewriter'
+import Axios from 'axios'
+const CounterURL = 'https://counter-ziveso.herokuapp.com/'
 
 class index extends React.Component {
+  componentDidMount() {
+      Axios.get(CounterURL).then().catch()
+  }
 
   mounted() {
     this.props.isMount(true)
