@@ -1,10 +1,10 @@
 import React from 'react'
-import Me from './Me'
+import Me from './Myself/Me'
 import './About.css'
-import Skill from './Skill'
-import Introduce from './Introduce'
-import Github from './Github'
-import SkillMobile from './SkillMobile'
+import Skill from './Skill/Skill'
+import Introduce from './Introduce/Introduce'
+import Github from './Github/Github'
+import SkillMobile from './Skill/SkillMobile'
 
 class index extends React.Component {
   constructor(props) {

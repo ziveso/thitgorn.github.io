@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Navbar from './components/Navbar/Navbar'
+import Me from './Me';
 
-it('renders without crashing', () => {
+it('Myself component renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  ReactDOM.render(<Me />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

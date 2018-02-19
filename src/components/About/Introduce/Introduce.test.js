@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Navbar from './components/Navbar/Navbar'
+import Introduce from './Introduce';
 
-it('renders without crashing', () => {
+it('Introduce component renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  ReactDOM.render(<Introduce />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

@@ -31,7 +31,9 @@ class App extends Component {
                        following: data.following ,
                        img: data.avatar_url ,
                        public_repos: data.public_repos} )
-    }).catch()
+    }).catch((err)=>{
+      console.log(err + " at get data from gtihub");
+    })
   }
 
   setIsMount(bool) {
@@ -45,7 +47,8 @@ class App extends Component {
       } else
       return <Container data={this.state}/>
     } else {
-      return <LoadPage isMount={this.setIsMount}/>
+      this.setIsMount(true)
+      // return <LoadPage isMount={this.setIsMount}/>
     }
   }
 
