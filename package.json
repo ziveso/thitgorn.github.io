@@ -44,6 +44,7 @@
     "react-fontawesome": "^1.6.1",
     "react-ga": "^2.4.0",
     "react-image-gallery": "^0.8.7",
+    "react-interval": "^2.0.2",
     "react-load-image": "^0.1.6",
     "react-scroll": "^1.7.6",
     "react-typewriter": "^0.4.1",

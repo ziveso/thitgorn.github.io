@@ -5526,6 +5526,12 @@ react-image-gallery@^0.8.7:
     prop-types "^15.5.8"
     react-swipeable "^4.0.0"
 
+react-interval@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-interval/-/react-interval-2.0.2.tgz#eb52690c79fde7125beaab6258e4d630d3f1f2ce"
+  dependencies:
+    prop-types "^15.6.0"
+
 react-load-image@^0.1.6:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/react-load-image/-/react-load-image-0.1.6.tgz#abafacb18813983a8af43d9f2fe9ed7bf89ca29a"

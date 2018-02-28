@@ -1,7 +1,55 @@
 import React from 'react'
 import './Github.css'
+import Axios from 'axios'
+import ReactInterval from 'react-interval'
+import commitImg from './images/commit.png'
+import pull_requestImg from './images/git-pull-request.png'
+import pushImg from './images/repo-push.ico'
+
+const URL = 'https://api.github.com/users/thitgorn/events'
 
 class Github extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { feed : 'loading' }
+    this.getNewFeedData = this.getNewFeedData.bind(this)
+  }
+
+  componentWillMount() {
+    this.getNewFeedData()
+  }
+
+  getNewFeedData() {
+    Axios.get(URL).then( (response)=>{
+      var top3 = response.data.slice(0,3)
+      this.setState( {feed : top3})
+    }).catch( (err)=>{
+      console.log(err);
+    })
+  }
+
+  getNewFeedTable() {
+    if(this.state.feed === 'loading') {
+      return null
+    }
+    return (<div>{this.state.feed.map((item) => {
+        switch(item.type){
+          case 'PullRequestEvent':
+                return (<div><img src={pull_requestImg} alt="pull_request" height="16px" width="16px"/> {item.repo.name}
+                            <div align="left" style={{margin:"0 0 0 20px"}}><img src={commitImg} height="32px" width="32px" alt="commit"/>{item.payload.pull_request.head.repo.full_name}</div>
+                      </div>);
+          case 'PushEvent':
+                return <div><img src={pushImg} alt="pushImg" height="16px" width="16px"/> {item.repo.name}{item.payload.commits.map((item) => {
+                  return <div align="left" style={{margin:"0 0 0 20px"}}><img src={commitImg} height="32px" width="32px" alt="commit"/>{item.message}</div>
+                })}</div>
+          // case 'CreateEvent':;
+          // case 'WatchEvent':;
+          default:
+                return <div>unknown at {item.repo.name}</div>
+        }
+    })}</div>)
+  }
+
   findDigit(number) {
     number = parseInt(number , 10)
     if(number/10===0)
@@ -18,28 +66,23 @@ class Github extends React.Component {
   }
   render() {
     return (<div className="Github container">
+              <ReactInterval timeout={5000} enabled={true} callback={() => {this.getNewFeedData()}} />
               <img src="https://assets-cdn.github.com/images/modules/site/logos/desktop-logo.png" className="github-img" alt="GITHUB-LOGO" />
               <h2>MY GITHUB STATUS</h2>
-              <h5>
-                Username : <a href="https://github.com/thitgorn">{this.props.data.username}</a>
-              </h5>
-              <div align="left">
-                Following
-              </div>
-              <div className="progress">
-                <div className="progress-bar progress-bar-github" style={{width: `${this.getW(this.props.data.following)}%`}}>{this.props.data.following}/{this.power(this.findDigit(this.props.data.following))}</div>
-              </div>
-              <div align="left">
-                Follower
-              </div>
-              <div className="progress">
-                <div className="progress-bar progress-bar-github" style={{width: `${this.getW(this.props.data.follower)}%`}}>{this.props.data.follower}/{this.power(this.findDigit(this.props.data.follower))}</div>
+              <div align="center">
+              <iframe src="https://ghbtns.com/github-btn.html?user=thitgorn&type=follow&count=true&size=large" frameBorder="0" scrolling="0" width="220px" height="30px" title="github"></iframe>
               </div>
               <div align="left">
                 Public repos
               </div>
               <div className="progress">
                 <div className="progress-bar progress-bar-github" style={{width: `${this.getW(this.props.data.public_repos)}%`}}>{this.props.data.public_repos}/{this.power(this.findDigit(this.props.data.public_repos))}</div>
+              </div>
+              <div align="left">
+                <h3>Real Time NEWS FEED</h3>
+              </div>
+              <div align="left" style={{border:'1px solid black', margin:'0 0 50px 0'}}>
+              {this.getNewFeedTable()}
               </div>
             </div>)
   }

@@ -21,7 +21,7 @@ class App extends Component {
     this.setIsMount = this.setIsMount.bind(this)
   }
 
-  componentDidMount() {
+  componentWillMount() {
     var self = this
     Axios.get(URL).then( function(api) {
       let data = api.data
@@ -47,8 +47,8 @@ class App extends Component {
       } else
       return <Container data={this.state}/>
     } else {
-      this.setIsMount(true)
-      // return <LoadPage isMount={this.setIsMount}/>
+      // this.setIsMount(true)
+      return <LoadPage isMount={this.setIsMount}/>
     }
   }
 
