@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Axios from 'axios'
-import ReactInterval from 'react-interval'
 import Feed from './Feed'
 
 const URL = 'https://api.github.com/users/thitgorn/events'
@@ -37,9 +36,8 @@ class NewFeed extends React.Component {
   render() {
     return (
       <div>
-        <ReactInterval timeout={5000} enabled={true} callback={() => {this.getNewFeedData()}} />
         <div align="left">
-          <h3>Real Time NEWS FEED</h3>
+          <h3>MY GITHUB NEWS FEED</h3>
         </div>
         <div align="left">
           {this.getNewFeedTable()}
