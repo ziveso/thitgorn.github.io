@@ -1,6 +1,9 @@
 .Introduce {
-  padding-top: 15vh;
-  height: 80vh;
-  font-style: oblique;
+  margin-top: 15vh;
+  padding: 20px 10px 20px 10px;
+  /* font-style: oblique; */
   font-size: 15px;
+  border-radius: 20px;
+  color: rgba(199, 255, 147, 0.7);
+  background: rgba(221, 140, 93 , 0.7);
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Introduce.css'
+import grassImg from '../../../images/grass.png'
 
 var content = {
   header: 'Thitiwat Thongbor',
@@ -14,8 +15,13 @@ var content = {
 
 class Introduce extends React.Component {
   render(){
-    return (<div className="Introduce container">
-              {content.content}
+    return (<div style={{border:'1px solid rgb(199,218,205)'}}>
+              <div className="Introduce container">
+                {content.content}
+              </div>
+              <div align="center">
+                <img src={grassImg} style={{width:`50%`, margin:'50px 0 0 0'}}/>
+              </div>
             </div>)
   }
 }
