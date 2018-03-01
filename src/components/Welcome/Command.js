@@ -2,7 +2,7 @@ const cmd = {
   "ls" : "README.txt",
   "README" :
   `Portfolio website\nThitiwat Thongbor - SOFTWARE DEVELOPER\n\n
-see command run cmd\n=============\n`,
+see command run help\n=============\n`,
   "clear" : "clear",
   "next" : "next",
   "about" : `
