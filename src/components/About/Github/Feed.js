@@ -22,14 +22,15 @@ class Feed extends React.Component{
     if(item===null) {
       return null;
     }
+    console.log(item);
     switch(item.type){
       case 'PullRequestEvent':
             return (<div key={id}><img src={pull_requestImg} alt="pull_request" height="16px" width="16px"/> {item.repo.name}
                         <div align="left" style={{margin:"0 0 0 20px"}}><img src={commitImg} height="32px" width="32px" alt="commit"/>{item.payload.pull_request.head.repo.full_name}</div>
                   </div>);
       case 'PushEvent':
-            return <div key={id}><img src={pushImg} alt="pushImg" height="16px" width="16px"/> {item.repo.name}{item.payload.commits.map((item,id) => {
-              return <div key={id} align="left" style={{margin:"0 0 0 20px"}}><img src={commitImg} height="32px" width="32px" alt="commit"/>{item.message}</div>
+            return <div key={id}><img src={pushImg} alt="pushImg" height="16px" width="16px"/> {item.repo.name}{item.payload.commits.map((item,ids) => {
+              return <div key={ids} align="left" style={{margin:"0 0 0 20px"}}><img src={commitImg} height="32px" width="32px" alt="commit"/>{item.message}</div>
             })}</div>
       case 'WatchEvent':
             return (<div key={id}><img src={starImg} alt="star" height="16px" width="16px"/><span align="left" style={{margin:"0 0 0 7px"}}>{item.repo.name}</span></div>)

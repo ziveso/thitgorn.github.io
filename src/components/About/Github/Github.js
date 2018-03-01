@@ -34,7 +34,6 @@ class Github extends React.Component {
               </div>
               <div>
                 <NewFeed />
-                <h1>goodbye world</h1>
               </div>
             </div>)
   }
