@@ -5,6 +5,9 @@ import ReactInterval from 'react-interval'
 import commitImg from './images/commit.png'
 import pull_requestImg from './images/git-pull-request.png'
 import pushImg from './images/repo-push.ico'
+import starImg from './images/star.png'
+import forkImg from './images/fork.png'
+import issueImg from './images/issue.png'
 
 const URL = 'https://api.github.com/users/thitgorn/events'
 
@@ -32,20 +35,24 @@ class Github extends React.Component {
     if(this.state.feed === 'loading') {
       return null
     }
-    return (<div>{this.state.feed.map((item) => {
+    return (<div>{this.state.feed.map((item,id) => {
         switch(item.type){
           case 'PullRequestEvent':
-                return (<div><img src={pull_requestImg} alt="pull_request" height="16px" width="16px"/> {item.repo.name}
+                return (<div key={id}><img src={pull_requestImg} alt="pull_request" height="16px" width="16px"/> {item.repo.name}
                             <div align="left" style={{margin:"0 0 0 20px"}}><img src={commitImg} height="32px" width="32px" alt="commit"/>{item.payload.pull_request.head.repo.full_name}</div>
                       </div>);
           case 'PushEvent':
-                return <div><img src={pushImg} alt="pushImg" height="16px" width="16px"/> {item.repo.name}{item.payload.commits.map((item) => {
-                  return <div align="left" style={{margin:"0 0 0 20px"}}><img src={commitImg} height="32px" width="32px" alt="commit"/>{item.message}</div>
+                return <div key={id}><img src={pushImg} alt="pushImg" height="16px" width="16px"/> {item.repo.name}{item.payload.commits.map((item,id) => {
+                  return <div key={id} align="left" style={{margin:"0 0 0 20px"}}><img src={commitImg} height="32px" width="32px" alt="commit"/>{item.message}</div>
                 })}</div>
-          // case 'CreateEvent':;
-          // case 'WatchEvent':;
+          case 'WatchEvent':
+                return (<div key={id}><img src={starImg} alt="star" height="16px" width="16px"/><span align="left" style={{margin:"0 0 0 7px"}}>{item.repo.name}</span></div>)
+          case 'ForkEvent':
+                return (<div key={id}><img src={forkImg} alt="fork" height="16px" width="16px"/><span align="left" style={{margin:"0 0 0 7px"}}>{item.repo.name}</span></div>)
+          case 'IssuesEvent':
+                return (<div key={id}><img src={issueImg} alt="issue" height="16px" width="16px"/><span align="left" style={{margin:"0 0 0 7px"}}>{item.repo.name}</span></div>)
           default:
-                return <div>unknown at {item.repo.name}</div>
+                return <div key={id}>? at {item.repo.name}</div>
         }
     })}</div>)
   }
