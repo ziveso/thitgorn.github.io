@@ -1,6 +1,5 @@
 .item-Border{
   background: rgba(111, 38, 193,0.5);
-  color: rgb(232, 204, 113);
   border: 2px solid rgb(232, 204, 113);
   border-radius: 20px;
   margin: 3px 3px 10px 3px;
@@ -11,4 +10,12 @@
   font-size: 18px;
   background: linear-gradient(45deg, rgba(111, 38, 193,0.5),rgba(111, 38, 193,0.4),rgba(111, 38, 193,0.4) , rgba(111, 38, 193,0));
   transition: 0.1s;
+}
+
+.linkGithub{
+  color: rgb(232, 204, 113) !important;
+}
+
+.linkGithub:hover {
+  text-decoration: none;
 }

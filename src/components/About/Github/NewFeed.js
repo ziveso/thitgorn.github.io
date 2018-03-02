@@ -29,7 +29,7 @@ class NewFeed extends React.Component {
       return null
     }
     return (<div>{this.state.feed.map((item,id) => {
-      return <Feed item={item} id={id}/>
+      return <Feed key={id} item={item} id={id}/>
     })}</div>)
   }
 

@@ -16,13 +16,18 @@ class Feed extends React.Component{
       id : props.id
     }
   }
+
+  getURL() {
+    const url = "https://www.github.com/" + this.state.item.repo.name;
+    return url;
+  }
+
   getItem() {
     var item = this.state.item;
     var id = this.state.id;
     if(item===null) {
       return null;
     }
-    console.log(item);
     switch(item.type){
       case 'PullRequestEvent':
             return (<div key={id}><img src={pull_requestImg} alt="pull_request" height="16px" width="16px"/> {item.repo.name}
@@ -46,7 +51,7 @@ class Feed extends React.Component{
   render() {
     return (
             <div className="item-Border">
-              {this.getItem()}
+              <a href={this.getURL()} target="_blank" className="linkGithub">{this.getItem()}</a>
             </div>
           )
   }
