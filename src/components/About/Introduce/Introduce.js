@@ -20,7 +20,7 @@ class Introduce extends React.Component {
                 {content.content}
               </div>
               <div align="center">
-                <img src={grassImg} style={{width:`50%`, margin:'50px 0 0 0'}}/>
+                <img src={grassImg} alt="grass" style={{width:`50%`, margin:'50px 0 0 0'}}/>
               </div>
             </div>)
   }

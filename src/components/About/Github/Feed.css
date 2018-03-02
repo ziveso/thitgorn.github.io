@@ -9,5 +9,6 @@
 
 .item-Border:hover {
   font-size: 18px;
+  background: linear-gradient(45deg, rgba(111, 38, 193,0.5),rgba(111, 38, 193,0.4),rgba(111, 38, 193,0.4) , rgba(111, 38, 193,0));
   transition: 0.1s;
 }

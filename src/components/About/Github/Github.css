@@ -10,6 +10,7 @@
 }
 
 .progress-bar-github{
+  background-color: rgba(111, 38, 193,1) !important;
   animation: progress-run 2s;
 }
 

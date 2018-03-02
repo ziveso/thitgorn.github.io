@@ -30,6 +30,7 @@ h5 {
 
 .progress:hover {
   background-color: grey !important;
+  transition: 0.5s;
 }
 
 .next{

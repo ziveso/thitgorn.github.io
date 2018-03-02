@@ -112,7 +112,7 @@ class Welcome extends React.Component {
                     <div>
                     <textarea type="text" value={this.state.value}
                     onChange={this.handleChange}
-                    style={{background:`black`,color:`green`,width:`100%`,height:`100vh`}}
+                    style={{background:`rgb(28, 24, 24)`,color:`green`,width:`100%`,height:`100vh`}}
                     spellCheck="false">
                     </textarea>
                     </div>
