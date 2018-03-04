@@ -3,6 +3,7 @@ import './Contact.css'
 import FACEBOOK from '../../images/icon/facebook.png'
 import TWITTER from '../../images/icon/twitter.png'
 import INSTAGRAM from '../../images/icon/instagram.png'
+import time from '../../updated'
 
 class Contact extends React.Component {
   render() {
@@ -16,6 +17,9 @@ class Contact extends React.Component {
               </div>
               <h6>or Call +668-377-0808</h6>
               <h5>You'll find a new technology world!</h5>
+              <div>
+                last update : {time.date}
+              </div>
             </div>)
   }
 }

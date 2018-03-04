@@ -1,3 +1,11 @@
 .hoverCursor:hover {
   cursor: pointer;
 }
+
+.card{
+  justify-content: center;
+}
+
+.card-img-top{
+  max-height: 200px;;
+}

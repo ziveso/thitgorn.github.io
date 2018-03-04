@@ -37,7 +37,7 @@ class Card extends React.Component {
   }
 
   show() {
-      this.setState({ visible: true }) 
+      this.setState({ visible: true })
   }
 
   hide() {
@@ -64,7 +64,7 @@ class Card extends React.Component {
                 <div className="card">
                   <img onKeyDown={this.onKeyPressed} tabIndex="0" className="card-img-top img-responsive hoverCursor" src={this.props.img} alt={this.props.img} onClick={()=>{this.show()}}/>
                   <div className="card-block">
-                    <h4 className="card-title">{this.props.title}</h4>
+                    <h4 className="card-title" align="center">{this.props.title}</h4>
                     <p className="card-text">{this.props.description}</p>
                     <div>{this.getBTN()}</div>
                   </div>
