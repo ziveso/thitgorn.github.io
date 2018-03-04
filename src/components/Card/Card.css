@@ -3,9 +3,25 @@
 }
 
 .card{
+  margin: auto;
   justify-content: center;
+  min-height: 450px;
+}
+
+.card-block{
+  margin: auto;
 }
 
 .card-img-top{
-  max-height: 200px;;
+  max-height: 200px;
+}
+
+.card-title{
+  margin-top: -50px;
+}
+
+.card-button{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }

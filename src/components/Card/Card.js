@@ -66,7 +66,7 @@ class Card extends React.Component {
                   <div className="card-block">
                     <h4 className="card-title" align="center">{this.props.title}</h4>
                     <p className="card-text">{this.props.description}</p>
-                    <div>{this.getBTN()}</div>
+                    <div className="card-button">{this.getBTN()}</div>
                   </div>
                   {this.getPopUp()}
                 </div>

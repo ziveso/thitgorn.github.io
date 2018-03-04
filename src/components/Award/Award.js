@@ -10,9 +10,9 @@ const description = "1st Place Local Hackday host by Github and Major Hack leagu
 const repo = "https://github.com/thitgorn/TouchYou_Hackaton"
 
 const intern_title = "Intership at Rabbitstale 2018"
-const intern_description = "4 june 2018 - 3 aug 2018  expected tools use : React , Laravel"
+const intern_description = "4 june 2018 - 3 aug 2018  expected tools use : React , Laravel. Currently doing one hour day challenge - at github repo."
 const intern_website = "http://www.rabbitstale.com/"
-
+const intern_repo = "https://github.com/thitgorn/1hraday-laravel"
 class Award extends React.Component {
   render() {
     return (<div className="Award">
@@ -23,7 +23,7 @@ class Award extends React.Component {
                       <Card img={localhackday} title={title} description={description} repo={repo} />
                     </div>
                     <div className="col-md-4">
-                      <Card img={intern_image} title={intern_title} description={intern_description} page={intern_website} />
+                      <Card img={intern_image} title={intern_title} description={intern_description} repo={intern_repo} page={intern_website} />
                     </div>
                   </div>
                 </div>
