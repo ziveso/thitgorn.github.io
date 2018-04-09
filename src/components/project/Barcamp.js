@@ -1,7 +1,7 @@
 import React from 'react'
 import './central.css'
 import bcbk from '../../images/barcamp.png'
-import bcbkgif from '../../images/gif/barcamp.gif'
+// import bcbkgif from '../../images/gif/barcamp.gif'
 import Card from '../Card/Card'
 
 const title = "BCBK 8"
@@ -10,7 +10,7 @@ const repo = null
 const page = "http://2017.barcampbangkhen.org"
 class Barcamp extends React.Component {
   render() {
-    return <Card img={bcbk} gif={bcbkgif} title={title} description={description} repo={repo} page={page}/>
+    return <Card img={bcbk} title={title} description={description} repo={repo} page={page}/>
   }
 }
 
