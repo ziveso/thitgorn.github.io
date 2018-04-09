@@ -48,7 +48,7 @@ class App extends Component {
       return <Container data={this.state}/>
     } else {
       this.setIsMount(true)
-      // return <LoadPage isMount={this.setIsMount}/>
+      return <LoadPage isMount={this.setIsMount}/>
     }
   }
 
