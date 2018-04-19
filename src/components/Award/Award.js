@@ -9,7 +9,7 @@ const title = "LOCAL HACKDAY - Hackaton 2016"
 const description = "1st Place Local Hackday host by Github and Major Hack league. Tools - Android, JAVA"
 const repo = "https://github.com/thitgorn/TouchYou_Hackaton"
 
-const intern_title = "Intership at Rabbitstale 2018"
+const intern_title = "Internship at Rabbitstale 2018"
 const intern_description = "4 june 2018 - 3 aug 2018  expected tools use : React , Laravel. Currently doing one hour day challenge - at github repo."
 const intern_website = "http://www.rabbitstale.com/"
 const intern_repo = "https://github.com/thitgorn/1hraday-laravel"
