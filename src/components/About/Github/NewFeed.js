@@ -3,7 +3,7 @@ import React from 'react'
 import Axios from 'axios'
 import Feed from './Feed'
 
-const URL = 'https://api.github.com/users/thitgorn/events'
+const URL = 'https://api.github.com/users/ziveso/events'
 
 class NewFeed extends React.Component {
   constructor(props) {

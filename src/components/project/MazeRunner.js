@@ -6,7 +6,7 @@ import Card from '../Card/Card'
 
 const title = "Maze Runner"
 const description = "Find the exit path of maze. Tools - JAVA"
-const repo = "https://github.com/thitgorn/MazeRunner"
+const repo = "https://github.com/ziveso/MazeRunner"
 const page = null
 class MazeRunner extends React.Component {
   render() {

@@ -5,7 +5,7 @@ import Gif from '../../images/gif/chayen.gif'
 
 const title = "SkeChayen"
 const description = "Guessing the words Game. Tools - node.js, Jquery"
-const repo = "https://github.com/thitgorn/ske-chayen"
+const repo = "https://github.com/ziveso/ske-chayen"
 const page = null
 class SkeChayen extends React.Component {
   render() {

@@ -4,7 +4,7 @@ import LoadPage from './components/Loadpageeffect/index'
 
 import Axios from 'axios'
 
-const URL = 'https://api.github.com/users/thitgorn'
+const URL = 'https://api.github.com/users/ziveso'
 
 
 class App extends Component {

@@ -24,7 +24,7 @@ class Github extends React.Component {
               <img src="https://assets-cdn.github.com/images/modules/site/logos/desktop-logo.png" className="github-img" alt="GITHUB-LOGO" />
               <h2>MY GITHUB STATUS</h2>
               <div align="center">
-              <iframe src="https://ghbtns.com/github-btn.html?user=thitgorn&type=follow&count=true&size=large" frameBorder="0" scrolling="0" width="220px" height="30px" title="github"></iframe>
+              <iframe src="https://ghbtns.com/github-btn.html?user=ziveso&type=follow&count=true&size=large" frameBorder="0" scrolling="0" width="220px" height="30px" title="github"></iframe>
               </div>
               <div align="left">
                 Public repos

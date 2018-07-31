@@ -5,7 +5,7 @@ import Card from '../Card/Card'
 
 const title = "Smarthouse"
 const description = "Automatic Etectric switch in house. Tools - Jquery"
-const repo = "https://github.com/thitgorn/smarthouse"
+const repo = "https://github.com/ziveso/smarthouse"
 class Smarthouse extends React.Component {
   render() {
     return <Card img={smarthouse} title={title} description={description} repo={repo} />

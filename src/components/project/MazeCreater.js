@@ -5,7 +5,7 @@ import Card from '../Card/Card'
 
 const title = "Maze Generator"
 const description = "Create the maze with non-cycle. Tools - C"
-const repo = "https://github.com/thitgorn/MazeGenerator"
+const repo = "https://github.com/ziveso/MazeGenerator"
 const page = null
 class MazeCreater extends React.Component {
   render() {
